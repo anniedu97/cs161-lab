@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: cs161_processor.prj
 
@@ -104,14 +104,18 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling verilog file "my_alu.v" in library work
 Compiling verilog file "mux_2_1.v" in library work
+Module <my_alu> compiled
 Compiling verilog file "cpu_registers.v" in library work
 Module <mux_2_1> compiled
 Compiling verilog file "cpumemory.v" in library work
 WARNING:HDLCompilers:38 - "cpumemory.v" line 6 Macro 'MAX_REG' redefined
 Module <cpu_registers> compiled
-Compiling verilog file "cs161_datapath.v" in library work
+Compiling verilog file "alu_control.v" in library work
 Module <cpumemory> compiled
+Compiling verilog file "cs161_datapath.v" in library work
+Module <alu_control> compiled
 Compiling verilog file "control_unit.v" in library work
 Module <cs161_datapath> compiled
 Compiling verilog file "cs161_processor.v" in library work
@@ -124,44 +128,12 @@ Analysis of file <"cs161_processor.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for module <cs161_processor> in library <work>.
-
-Analyzing hierarchy for module <cs161_datapath> in library <work>.
-
-Analyzing hierarchy for module <control_unit> in library <work> with parameters.
-	R = "000000"
-	beq = "000100"
-	imm = "001000"
-	lw = "100011"
-	sw = "101011"
-
-Analyzing hierarchy for module <cpumemory> in library <work>.
-
-Analyzing hierarchy for module <mux_2_1> in library <work> with parameters.
-	WORD_SIZE = "00000000000000000000000000100000"
-
-Analyzing hierarchy for module <cpu_registers> in library <work>.
-
-
-=========================================================================
-*                            HDL Analysis                               *
-=========================================================================
-Analyzing top module <cs161_processor>.
-ERROR:Xst:871 - "cs161_processor.v" line 45: Invalid use of input signal <prog_count> as target.
-ERROR:Xst:871 - "cs161_processor.v" line 46: Invalid use of input signal <instr_opcode> as target.
-WARNING:Xst:852 - "cs161_processor.v" line 50: Unconnected input port 'reg_dst' of instance 'DP' is tied to GND.
-ERROR:Xst:871 - "cs161_processor.v" line 50: Invalid use of input signal <reg1_addr> as target.
-ERROR:Xst:871 - "cs161_processor.v" line 50: Invalid use of input signal <reg1_data> as target.
-ERROR:Xst:871 - "cs161_processor.v" line 50: Invalid use of input signal <reg2_addr> as target.
-ERROR:Xst:871 - "cs161_processor.v" line 50: Invalid use of input signal <write_reg_addr> as target.
-ERROR:Xst:871 - "cs161_processor.v" line 50: Invalid use of input signal <write_reg_data> as target.
- 
-Found 7 error(s). Aborting synthesis.
+ERROR:HDLCompilers:87 - "cs161_datapath.v" line 108 Could not find module/primitive 'mux'
 --> 
 
-Total memory usage is 4534160 kilobytes
+Total memory usage is 4534112 kilobytes
 
-Number of errors   :    7 (   0 filtered)
-Number of warnings :    8 (   0 filtered)
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

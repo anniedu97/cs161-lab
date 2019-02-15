@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module my_alu #(parameter NBITS = 4)(
+module my_alu #(parameter NBITS = 32)(
     input clk,
     input reset,
     input [NBITS-1:0] A,

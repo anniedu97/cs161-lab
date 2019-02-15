@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
-module mux_2_1( select_in, datain1, datain2, data_out   );
+module mux( select_in, datain1, datain2, data_out   );
 
 // Parameters 
-parameter WORD_SIZE = 32 ; 
+parameter WORD_SIZE = 5 ; 
 
 // Input and outputs 
 // Modelling with Continuous Assignments 
@@ -13,10 +13,5 @@ input  wire [WORD_SIZE-1:0] datain2 ;
 output wire [WORD_SIZE-1:0] data_out ;
 
 assign data_out = (select_in) ? datain2 : datain1;
-
-always @* begin
-	$display("%d", datain1);
-	$display("%d", datain2);
-end 
 
 endmodule

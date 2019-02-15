@@ -70,11 +70,15 @@ wire [`WORD_SIZE-1:0] mem_data;
 wire [`WORD_SIZE-1:0] reg_data_1;
 wire [`WORD_SIZE-1:0] reg_data_2;
 
+wire [4:0] dst_2;
+wire [4:0] dst_1;
 
 assign prog_count = PC;
 assign instr_opcode = instr[31:26];
 assign reg1_addr = instr[25:21];
 assign reg2_addr = instr[20:16];
+assign dst_1 = instr[20:16];
+assign dst_2 = instr[15:11];
 assign write_reg_addr = dst_addr;
 //assign write_reg_data = alu_result;
 assign reg1_data = reg_data_1;
@@ -86,7 +90,9 @@ end
 
 
 always @(posedge clk) begin
-	PC = PC + 1;
+	PC = PC + 4;
+	//$display("%b", instr[20:16]);
+	//$display("%b", dst_2);
 end
 
 cpumemory mem (
@@ -94,17 +100,16 @@ cpumemory mem (
 	.rst(rst),
 	.instr_read_address(PC),
 	.instr_instruction(instr)
-	);
+);
 	
 assign opcode = instr[31:26];
 assign reg_1_adress = instr[25:21];
 
-
 mux_2_1 regdst_mux(
 	.select_in(reg_dst),
-	.datain1(instr[20:16]),
-	.datain2(instr[15:11]),
-	.data_out(write_reg_addr)
+	.datain1(dst_1),
+	.datain2(dst_2),
+	.data_out(dst_addr)
 );
 
 cpu_registers regs(
@@ -135,13 +140,13 @@ my_alu alu(
 	.B(alu_B),
 	.result(alu_result)
 );
-
 mux_2_1 mem_to_reg_mux(
 	.select_in(mem_to_reg),
 	.datain1(alu_res),
 	.datain2(mem_data),
 	.data_out(write_reg_data)
 );
+
 
 cpu_registers WB(
 	.clk(clk),

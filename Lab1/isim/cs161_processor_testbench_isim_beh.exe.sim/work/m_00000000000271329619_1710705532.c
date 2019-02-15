@@ -22,6 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/Anaya/Documents/CS161L/Lab1/mux_2_1.v";
+static const char *ng1 = "%d";
 
 
 
@@ -100,14 +101,14 @@ LAB13:    if (*((unsigned int *)t4) > 0)
 
 LAB15:    memcpy(t3, t22, 8);
 
-LAB16:    t16 = (t0 + 3224);
+LAB16:    t16 = (t0 + 3488);
     t23 = (t16 + 56U);
     t24 = *((char **)t23);
     t25 = (t24 + 56U);
     t26 = *((char **)t25);
     memcpy(t26, t3, 8);
     xsi_driver_vfirst_trans(t16, 0, 31);
-    t27 = (t0 + 3144);
+    t27 = (t0 + 3392);
     *((int *)t27) = 1;
 
 LAB1:    return;
@@ -135,10 +136,47 @@ LAB14:    memcpy(t3, t17, 8);
 
 }
 
+static void Always_17_1(char *t0)
+{
+    char *t1;
+    char *t2;
+    char *t3;
+    char *t4;
+    char *t5;
+
+LAB0:    t1 = (t0 + 3072U);
+    t2 = *((char **)t1);
+    if (t2 == 0)
+        goto LAB2;
+
+LAB3:    goto *t2;
+
+LAB2:    xsi_set_current_line(17, ng0);
+    t2 = (t0 + 3408);
+    *((int *)t2) = 1;
+    t3 = (t0 + 3104);
+    *((char **)t3) = t2;
+    *((char **)t1) = &&LAB4;
+
+LAB1:    return;
+LAB4:    xsi_set_current_line(17, ng0);
+
+LAB5:    xsi_set_current_line(18, ng0);
+    t4 = (t0 + 1344U);
+    t5 = *((char **)t4);
+    xsi_vlogfile_write(1, 0, 0, ng1, 2, t0, (char)118, t5, 32);
+    xsi_set_current_line(19, ng0);
+    t2 = (t0 + 1504U);
+    t3 = *((char **)t2);
+    xsi_vlogfile_write(1, 0, 0, ng1, 2, t0, (char)118, t3, 32);
+    goto LAB2;
+
+}
+
 
 extern void work_m_00000000000271329619_1710705532_init()
 {
-	static char *pe[] = {(void *)Cont_15_0};
+	static char *pe[] = {(void *)Cont_15_0,(void *)Always_17_1};
 	xsi_register_didat("work_m_00000000000271329619_1710705532", "isim/cs161_processor_testbench_isim_beh.exe.sim/work/m_00000000000271329619_1710705532.didat");
 	xsi_register_executes(pe);
 }
