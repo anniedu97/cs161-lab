@@ -1,0 +1,15 @@
+[Inputs]
+clk
+reset
+=A[3:0]=
+=B[3:0]=
+=opcode[2:0]=
+[Outputs]
+carryout
+overflow
+zero
+=result[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel my_alu
+

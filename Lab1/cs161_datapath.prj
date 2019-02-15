@@ -1,0 +1,5 @@
+verilog work "mux_2_1.v"
+verilog work "cpu_registers.v"
+verilog work "cpumemory.v"
+verilog work "alu_control.v"
+verilog work "cs161_datapath.v"

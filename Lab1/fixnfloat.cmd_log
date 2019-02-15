@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Anaya/Documents/CS161L/Lab1/fixnfloat.v -lang verilog -prj Lab1 -o fixnfloat.spl -module fixnfloat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e fixnfloat.spl C:/Users/Anaya/Documents/CS161L/Lab1/fixnfloat.sym 

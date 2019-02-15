@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="38" delta="old" ><arg fmt="%s" index="1">&quot;cpumemory.v&quot; line 6 </arg>Macro &apos;<arg fmt="%s" index="2">MAX_REG</arg>&apos; redefined
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;cs161_processor.v&quot; line 56 </arg>Connection to input port &apos;<arg fmt="%s" index="2">alu_op</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;cs161_processor.v&quot; line 65 </arg>Connection to output port &apos;<arg fmt="%s" index="2">reg2_data</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;cs161_datapath.v&quot; line 88 </arg>Connection to input port &apos;<arg fmt="%s" index="2">instr_read_address</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;cs161_datapath.v&quot; line 97 </arg>Connection to input port &apos;<arg fmt="%s" index="2">datain1</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;cs161_datapath.v&quot; line 98 </arg>Connection to input port &apos;<arg fmt="%s" index="2">datain2</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;cs161_datapath.v&quot; line 99 </arg>Connection to output port &apos;<arg fmt="%s" index="2">data_out</arg>&apos; does not match port size
+</msg>
+
+<msg type="error" file="Xst" num="871" delta="old" >&quot;<arg fmt="%s" index="1">cs161_processor.v</arg>&quot; line <arg fmt="%d" index="2">45</arg>: Invalid use of input signal &lt;<arg fmt="%s" index="3">prog_count</arg>&gt; as target.
+</msg>
+
+<msg type="error" file="Xst" num="871" delta="old" >&quot;<arg fmt="%s" index="1">cs161_processor.v</arg>&quot; line <arg fmt="%d" index="2">46</arg>: Invalid use of input signal &lt;<arg fmt="%s" index="3">instr_opcode</arg>&gt; as target.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">cs161_processor.v</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">reg_dst</arg>&apos; of instance &apos;<arg fmt="%s" index="4">DP</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="error" file="Xst" num="871" delta="old" >&quot;<arg fmt="%s" index="1">cs161_processor.v</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Invalid use of input signal &lt;<arg fmt="%s" index="3">reg1_addr</arg>&gt; as target.
+</msg>
+
+<msg type="error" file="Xst" num="871" delta="old" >&quot;<arg fmt="%s" index="1">cs161_processor.v</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Invalid use of input signal &lt;<arg fmt="%s" index="3">reg1_data</arg>&gt; as target.
+</msg>
+
+<msg type="error" file="Xst" num="871" delta="old" >&quot;<arg fmt="%s" index="1">cs161_processor.v</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Invalid use of input signal &lt;<arg fmt="%s" index="3">reg2_addr</arg>&gt; as target.
+</msg>
+
+<msg type="error" file="Xst" num="871" delta="old" >&quot;<arg fmt="%s" index="1">cs161_processor.v</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Invalid use of input signal &lt;<arg fmt="%s" index="3">write_reg_addr</arg>&gt; as target.
+</msg>
+
+<msg type="error" file="Xst" num="871" delta="old" >&quot;<arg fmt="%s" index="1">cs161_processor.v</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Invalid use of input signal &lt;<arg fmt="%s" index="3">write_reg_data</arg>&gt; as target.
+</msg>
+
+</messages>
+
