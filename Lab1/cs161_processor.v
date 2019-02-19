@@ -47,10 +47,23 @@ assign instr_opcode = opcode;
 
 // Insert your solution below here.
 	 
+control_unit ctrl (
+	.instr_op(opcode),
+	.reg_dst(reg_dst),
+	.branch(branch),    
+	.mem_read(mem_read), 
+	.mem_to_reg(mem_to_reg),
+	.alu_op(alu_op),
+	.mem_write(mem_write),  
+	.alu_src(alu_src),
+	.reg_write(reg_write)
+);
+	 
 cs161_datapath DP (
 	.clk(clk),
 	.rst(rst),
 	.branch(branch),
+	.reg_dst(reg_dst),
 	.mem_read(mem_read),
 	.mem_to_reg(mem_to_reg),
 	.alu_op(alu_out),
@@ -67,16 +80,6 @@ cs161_datapath DP (
 	.write_reg_data(write_reg_data)
 );
 
-control_unit ctrl (
-	.instr_op(opcode),
-	.reg_dst(reg_dst),
-	.branch(branch),    
-	.mem_read(mem_read), 
-	.mem_to_reg(mem_to_reg),
-	.alu_op(alu_op),
-	.mem_write(mem_write),  
-	.alu_src(alu_src),
-	.reg_write(reg_write)
-);
+
 	          
 endmodule

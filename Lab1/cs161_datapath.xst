@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/Anaya/Documents/CS161L/Lab1/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Anaya/Documents/CS161L/Lab1/xst"
+set -tmpdir "D:/Documents/cs161L/cs161-lab/Lab1/xst/projnav.tmp"
+set -xsthdpdir "D:/Documents/cs161L/cs161-lab/Lab1/xst"
 elaborate
 -ifn cs161_datapath.prj
 -ifmt mixed

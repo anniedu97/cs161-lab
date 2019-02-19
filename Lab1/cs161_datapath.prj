@@ -1,3 +1,4 @@
+verilog work "my_alu.v"
 verilog work "mux_2_1.v"
 verilog work "cpu_registers.v"
 verilog work "cpumemory.v"

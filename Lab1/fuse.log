@@ -1,47 +1,50 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor_testbench_isim_beh.exe -prj C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor_testbench_beh.prj work.cs161_processor_testbench work.glbl 
+Running: D:\xilinxnew\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/Documents/cs161L/cs161-lab/Lab1/cs161_processor_testbench_isim_beh.exe -prj D:/Documents/cs161L/cs161-lab/Lab1/cs161_processor_testbench_beh.prj work.cs161_processor_testbench work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/my_alu.v" into library work
-Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/mux_2_1.v" into library work
-Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/cpu_registers.v" into library work
-Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/cpumemory.v" into library work
-Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/alu_control.v" into library work
-Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" into library work
-Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/control_unit.v" into library work
-Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" into library work
-Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/cd161_processor_tb.v" into library work
-Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+ERROR:HDLCompiler:0 - "Unknown" Line 0: The path "isim" does not exist
+ERROR:HDLCompiler:0 - "Unknown" Line 0: The path "isim" does not exist
+Analyzing Verilog file "D:/Documents/cs161L/cs161-lab/Lab1/my_alu.v" into library work
+Analyzing Verilog file "D:/Documents/cs161L/cs161-lab/Lab1/mux_2_1.v" into library work
+Analyzing Verilog file "D:/Documents/cs161L/cs161-lab/Lab1/cpu_registers.v" into library work
+Analyzing Verilog file "D:/Documents/cs161L/cs161-lab/Lab1/cpumemory.v" into library work
+Analyzing Verilog file "D:/Documents/cs161L/cs161-lab/Lab1/alu_control.v" into library work
+Analyzing Verilog file "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" into library work
+Analyzing Verilog file "D:/Documents/cs161L/cs161-lab/Lab1/control_unit.v" into library work
+Analyzing Verilog file "D:/Documents/cs161L/cs161-lab/Lab1/cs161_processor.v" into library work
+Analyzing Verilog file "D:/Documents/cs161L/cs161-lab/Lab1/cd161_processor_tb.v" into library work
+Analyzing Verilog file "D:/xilinxnew/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:1016 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" Line 50: Port instr_op is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 98: Port data_mem_write is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 115: Port reg_write is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 131: Port alu_out is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 136: Port opcode is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 151: Port read_register_1 is not connected to this instance
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" Line 56: Size mismatch in connection of port <alu_op>. Formal port size is 4-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 101: Size mismatch in connection of port <instr_read_address>. Formal port size is 8-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 110: Size mismatch in connection of port <datain1>. Formal port size is 32-bit while actual signal size is 5-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 111: Size mismatch in connection of port <datain2>. Formal port size is 32-bit while actual signal size is 5-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 112: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 5-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 127: Size mismatch in connection of port <datain2>. Formal port size is 32-bit while actual signal size is 16-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 145: Size mismatch in connection of port <datain1>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" Line 76: Size mismatch in connection of port <alu_op>. Formal port size is 4-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:1016 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_processor.v" Line 62: Port instr_op is not connected to this instance
+WARNING:HDLCompiler:189 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_processor.v" Line 56: Size mismatch in connection of port <alu_op>. Formal port size is 4-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:1016 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" Line 111: Port data_mem_write is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" Line 130: Port reg_write is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" Line 146: Port alu_out is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" Line 152: Port opcode is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" Line 168: Port read_register_1 is not connected to this instance
+WARNING:HDLCompiler:189 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_processor.v" Line 69: Size mismatch in connection of port <alu_op>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" Line 114: Size mismatch in connection of port <instr_read_address>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" Line 122: Size mismatch in connection of port <datain1>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" Line 123: Size mismatch in connection of port <datain2>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" Line 124: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" Line 142: Size mismatch in connection of port <datain2>. Formal port size is 32-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:189 - "D:/Documents/cs161L/cs161-lab/Lab1/cs161_datapath.v" Line 162: Size mismatch in connection of port <datain1>. Formal port size is 32-bit while actual signal size is 1-bit.
 Completed static elaboration
+Compiling module control_unit
 Compiling module cpumemory
 Compiling module mux_2_1
 Compiling module cpu_registers
 Compiling module alu_control
 Compiling module my_alu
 Compiling module cs161_datapath
-Compiling module control_unit
 Compiling module cs161_processor
 Compiling module cs161_processor_testbench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\cs161_processor_testbench_isim_beh.exe.sim\libPortability.dll".
 Compiled 10 Verilog Units
-Built simulation executable C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor_testbench_isim_beh.exe
-Fuse Memory Usage: 28152 KB
-Fuse CPU Usage: 578 ms
+Built simulation executable D:/Documents/cs161L/cs161-lab/Lab1/cs161_processor_testbench_isim_beh.exe
+Fuse Memory Usage: 28132 KB
+Fuse CPU Usage: 687 ms

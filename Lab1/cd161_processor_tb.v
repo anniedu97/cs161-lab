@@ -33,17 +33,18 @@ module cs161_processor_testbench( );
   
   	initial begin 
 	 
-	 clk = 0 ; 
+	/* clk = 0 ; 
 	 rst = 1 ; 
 	 # 20 ; 
-	 
-	 clk = 1 ; 
-	 rst = 1 ; 
-	 # 20 ; 
-
+	 */
 	 clk = 0 ; 
 	 rst = 0 ; 
-	 # 20 ; 
+	 # 60 ; 
+
+/*
+	 clk = 0 ; 
+	 rst = 0 ; 
+	 # 20 ; */
 		 
 	 forever begin 
 		#20 clk = ~clk;
