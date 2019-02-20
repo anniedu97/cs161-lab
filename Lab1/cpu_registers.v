@@ -47,7 +47,7 @@ assign read_data_2 = RFILE[read_register_2] ;
 
 always @( posedge clk  )
 begin 
-	
+
        if ( rst )  begin 
 
 	     for (i = 0; i < `MAX_REG; i = i +1) begin
@@ -61,7 +61,10 @@ begin
 	     end 	
 
          end 
-	
+					  
+		
+		
+		
 end 
 	
 endmodule

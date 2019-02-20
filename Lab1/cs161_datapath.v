@@ -79,9 +79,6 @@ assign prog_count = PC;
 assign instr_opcode = instr[31:26];
 assign reg1_addr = instr[25:21];
 assign reg2_addr = instr[20:16];
-assign dst_1 = instr[20:16];
-assign dst_2 = instr[15:11];
-assign write_reg_addr = dst_addr;
 assign reg1_data = reg_data_1;
 assign reg2_data = reg_data_2;
 assign funct = instr[5:0];
@@ -98,15 +95,19 @@ always @(posedge clk) begin
 	if(rst != 1) begin
 		PC = PC + 4;
 	end
-	//$display("%b", funct);
-	//$display("%b", dst_2);
+	//$display("write_addr:", write_reg_addr);
+	//$display("write_data", write_reg_data);
 end
 
 cpumemory mem (
 	.clk(clk),
 	.rst(rst),
 	.instr_read_address(PC/4),
-	.instr_instruction(instr)
+	.instr_instruction(instr),
+	.data_mem_write(mem_write),
+	.data_address(alu_result),
+	.data_write_data(reg2_data),
+	.data_read_data(mem_data) 
 );
 	
 assign opcode = instr[31:26];
@@ -114,9 +115,9 @@ assign reg_1_adress = instr[25:21];
 
 mux_2_1 regdst_mux(
 	.select_in(reg_dst),
-	.datain1(dst_1),
-	.datain2(dst_2),
-	.data_out(dst_addr)
+	.datain1(instr[20:16]),
+	.datain2(instr[15:11]),
+	.data_out(write_reg_addr)
 );
 
 cpu_registers regs(
@@ -125,7 +126,10 @@ cpu_registers regs(
 	.read_register_1(reg1_addr),
 	.read_register_2(reg2_addr),
 	.read_data_1(reg_data_1),
-	.read_data_2(reg_data_2)
+	.read_data_2(reg_data_2),
+	.reg_write(reg_write),
+	.write_register(write_reg_addr),
+	.write_data(write_reg_data) 
 );
 
 mux_2_1 alu_src_mux(
@@ -150,14 +154,6 @@ my_alu alu(
 	.result(alu_result)
 );
 
-cpumemory mem_access (
-	.clk(clk),
-	.rst(rst),
-	.data_mem_write(mem_write),
-	.data_address(alu_result),
-	.data_write_data(reg2_data),
-	.data_read_data(mem_data) 
-);
 
 mux_2_1 mem_to_reg_mux(
 	.select_in(mem_to_reg),
@@ -165,14 +161,5 @@ mux_2_1 mem_to_reg_mux(
 	.datain2(mem_data),
 	.data_out(write_reg_data)
 );
-
-cpu_registers WB(
-	.clk(clk),
-	.rst(rst),
-	.reg_write(reg_write),
-	.write_register(write_reg_addr),
-	.write_data(write_reg_data)
-);
-
 
 endmodule
