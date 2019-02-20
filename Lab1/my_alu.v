@@ -23,7 +23,7 @@ module my_alu #(parameter NBITS = 32)(
     input reset,
     input [NBITS-1:0] A,
     input [NBITS-1:0] B,
-    input [2:0] opcode,
+    input [3:0] opcode,
     output signed [NBITS-1:0] result,
     output carryout,
     output overflow,
@@ -46,14 +46,16 @@ module my_alu #(parameter NBITS = 32)(
 	 assign carryout = cout;
 	 
 	 
-	 localparam u_add = 3'b000;
-	 localparam s_add = 3'b001;
-	 localparam u_sub = 3'b010;
-	 localparam s_sub = 3'b011;
-	 localparam AND   = 3'b100;
-	 localparam OR    = 3'b101; 
-	 localparam XOR   = 3'b110;
-	 localparam div2  = 3'b111;
+	 localparam u_add = 4'b1000;
+	 localparam s_add = 4'b0010;
+	 localparam u_sub = 4'b0100;
+	 localparam s_sub = 4'b0110;
+	 localparam AND   = 4'b0000;
+	 localparam OR    = 4'b0001; 
+	 localparam XOR   = 4'b1110;
+	 localparam div2  = 4'b1110;
+	 localparam NOR 	= 4'b1100;
+	 localparam SLT	= 4'b0111;
 	 
 	 always @(posedge clk) begin
 		ovflo = 0;
@@ -124,6 +126,17 @@ module my_alu #(parameter NBITS = 32)(
 						res = A >>> 1;
 		 
 		         end
+					
+			NOR: begin
+					res = ~(A | B);
+
+				end
+				
+			SLT:	begin
+					if(A < B) begin
+						res = 0;
+					end
+				end
 					
 			default: begin
 							res = -1;	

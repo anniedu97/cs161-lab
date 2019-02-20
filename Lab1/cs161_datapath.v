@@ -63,6 +63,7 @@ module cs161_datapath(
 reg [`WORD_SIZE-1:0] PC;
 wire [`WORD_SIZE-1:0] instr;
 wire [5:0] opcode;
+wire [3:0] alu_fnct;
 wire [4:0] dst_addr;
 wire [`WORD_SIZE-1:0] alu_B;
 wire [`WORD_SIZE-1:0] alu_result;
@@ -80,9 +81,11 @@ assign reg2_addr = instr[20:16];
 assign dst_1 = instr[20:16];
 assign dst_2 = instr[15:11];
 assign write_reg_addr = dst_addr;
-//assign write_reg_data = alu_result;
 assign reg1_data = reg_data_1;
 assign reg2_data = reg_data_2;
+assign funct = instr[5:0];
+
+
 
 initial begin
 	PC = 0;
@@ -90,8 +93,10 @@ end
 
 
 always @(posedge clk) begin
-	PC = PC + 4;
-	//$display("%b", instr[20:16]);
+	if(rst != 1) begin
+		PC = PC + 4;
+	end
+	$display("%b", alu_result);
 	//$display("%b", dst_2);
 end
 
@@ -130,23 +135,34 @@ mux_2_1 alu_src_mux(
 
 alu_control alu_ctrl(
 	.alu_op(alu_op),  
-	.instruction_5_0(opcode)
+	.instruction_5_0(funct),
+	.alu_out(alu_fnct)
 );
 
 my_alu alu(
 	.clk(clk),
 	.reset(rst),
+	.opcode(alu_fnct),
 	.A(reg_data_1),
 	.B(alu_B),
 	.result(alu_result)
 );
+
+cpumemory mem_access (
+	.clk(clk),
+	.rst(rst),
+	.data_mem_write(mem_write),
+	.data_address(alu_result),
+	.data_write_data(reg2_data),
+	.data_read_data(mem_data) 
+);
+
 mux_2_1 mem_to_reg_mux(
 	.select_in(mem_to_reg),
-	.datain1(alu_res),
+	.datain1(alu_result),
 	.datain2(mem_data),
 	.data_out(write_reg_data)
 );
-
 
 cpu_registers WB(
 	.clk(clk),
@@ -155,9 +171,6 @@ cpu_registers WB(
 	.write_register(write_reg_addr),
 	.write_data(write_reg_data)
 );
-
-
-
 
 
 endmodule
