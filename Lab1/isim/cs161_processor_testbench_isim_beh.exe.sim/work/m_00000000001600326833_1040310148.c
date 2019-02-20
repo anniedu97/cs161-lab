@@ -26,7 +26,6 @@ static int ng1[] = {16, 0};
 static int ng2[] = {0, 0};
 static int ng3[] = {1, 0};
 static int ng4[] = {4, 0};
-static const char *ng5 = "%d";
 
 
 
@@ -627,11 +626,7 @@ LAB9:    t22 = (t6 + 4);
         goto LAB10;
 
 LAB11:
-LAB12:    xsi_set_current_line(98, ng0);
-    t2 = (t0 + 5688U);
-    t3 = *((char **)t2);
-    xsi_vlogfile_write(1, 0, 0, ng5, 2, t0, (char)118, t3, 32);
-    goto LAB2;
+LAB12:    goto LAB2;
 
 LAB7:    *((unsigned int *)t6) = 1;
     goto LAB9;
@@ -850,9 +845,9 @@ LAB1:    return;
 }
 
 
-extern void work_m_00000000001671725729_1040310148_init()
+extern void work_m_00000000001600326833_1040310148_init()
 {
 	static char *pe[] = {(void *)Cont_78_0,(void *)Cont_79_1,(void *)Cont_80_2,(void *)Cont_81_3,(void *)Cont_82_4,(void *)Cont_83_5,(void *)Cont_84_6,(void *)Cont_85_7,(void *)Initial_89_8,(void *)Always_94_9,(void *)Cont_113_10,(void *)Cont_114_11,(void *)implSig1_execute};
-	xsi_register_didat("work_m_00000000001671725729_1040310148", "isim/cs161_processor_testbench_isim_beh.exe.sim/work/m_00000000001671725729_1040310148.didat");
+	xsi_register_didat("work_m_00000000001600326833_1040310148", "isim/cs161_processor_testbench_isim_beh.exe.sim/work/m_00000000001600326833_1040310148.didat");
 	xsi_register_executes(pe);
 }

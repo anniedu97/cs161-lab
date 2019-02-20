@@ -95,7 +95,7 @@ always @(posedge clk) begin
 	if(rst != 1) begin
 		PC = PC + 4;
 	end
-	$display("%d", signEX);
+	//$display("%d", alu_result);
 	//$display("write_data", write_reg_data);
 end
 
@@ -103,11 +103,11 @@ cpumemory mem (
 	.clk(clk),
 	.rst(rst),
 	.instr_read_address(PC/4),
-	.instr_instruction(instr),
-	.data_mem_write(mem_write),
-	.data_address(alu_result),
-	.data_write_data(reg2_data),
-	.data_read_data(mem_data) 
+	.instr_instruction(instr)
+	//.data_mem_write(mem_write),
+	//.data_address(alu_result),
+	//.data_write_data(reg2_data),
+	//.data_read_data(mem_data) 
 );
 	
 assign opcode = instr[31:26];
@@ -162,6 +162,13 @@ mux_2_1 mem_to_reg_mux(
 	.data_out(write_reg_data)
 );
 
-
+cpumemory datamem (
+	.clk(clk),
+	.rst(rst),
+	.data_mem_write(mem_write),
+	.data_address(alu_result),
+	.data_write_data(reg2_data),
+	.data_read_data(mem_data) 
+	);
 
 endmodule
