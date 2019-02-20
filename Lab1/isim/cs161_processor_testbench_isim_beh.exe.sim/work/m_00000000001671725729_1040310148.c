@@ -26,6 +26,7 @@ static int ng1[] = {16, 0};
 static int ng2[] = {0, 0};
 static int ng3[] = {1, 0};
 static int ng4[] = {4, 0};
+static const char *ng5 = "%d";
 
 
 
@@ -626,7 +627,11 @@ LAB9:    t22 = (t6 + 4);
         goto LAB10;
 
 LAB11:
-LAB12:    goto LAB2;
+LAB12:    xsi_set_current_line(98, ng0);
+    t2 = (t0 + 5688U);
+    t3 = *((char **)t2);
+    xsi_vlogfile_write(1, 0, 0, ng5, 2, t0, (char)118, t3, 32);
+    goto LAB2;
 
 LAB7:    *((unsigned int *)t6) = 1;
     goto LAB9;

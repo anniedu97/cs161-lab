@@ -54,9 +54,11 @@ begin
 			RFILE[i] <= { `WORD_SIZE {1'b0} } ; 
 	     end 
 
-       end else begin 
+       end 
+		 
+		 else begin 
 
-	     if (reg_write) begin 
+	     if (reg_write && clk) begin 
 			RFILE[write_register] <= write_data ;				
 	     end 	
 

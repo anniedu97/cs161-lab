@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" Line 50: Port <arg fmt="%s" index="1">instr_op</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" Line 51: Port <arg fmt="%s" index="1">instr_op</arg> is not connected to this instance
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 148: Port <arg fmt="%s" index="1">carryout</arg> is not connected to this instance

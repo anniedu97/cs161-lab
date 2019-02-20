@@ -95,7 +95,7 @@ always @(posedge clk) begin
 	if(rst != 1) begin
 		PC = PC + 4;
 	end
-	//$display("write_addr:", write_reg_addr);
+	$display("%d", signEX);
 	//$display("write_data", write_reg_data);
 end
 
@@ -123,11 +123,11 @@ mux_2_1 regdst_mux(
 cpu_registers regs(
 	.clk(clk),
 	.rst(rst),
+	.reg_write(reg_write),
 	.read_register_1(reg1_addr),
 	.read_register_2(reg2_addr),
 	.read_data_1(reg_data_1),
 	.read_data_2(reg_data_2),
-	.reg_write(reg_write),
 	.write_register(write_reg_addr),
 	.write_data(write_reg_data) 
 );
@@ -161,5 +161,7 @@ mux_2_1 mem_to_reg_mux(
 	.datain2(mem_data),
 	.data_out(write_reg_data)
 );
+
+
 
 endmodule

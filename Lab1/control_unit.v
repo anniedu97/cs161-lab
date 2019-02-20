@@ -19,6 +19,8 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module control_unit(
+	 input wire clk,
+	 input wire rst,
 	 input wire [5:0]  instr_op , 
     output wire reg_dst      ,   
     output wire  branch    ,     
@@ -48,46 +50,52 @@ module control_unit(
 	localparam imm = 6'b001000;
 
 
-	always @ * begin
-		reg_out = 0;
+	always @(posedge clk) begin
+		if(rst) begin
+			reg_out = 0;
+		end
 		
-		case(instr_op) 
-			R:		begin
-				reg_out[8] = 1'b1;
-				reg_out[5] = 1'b1;
-				reg_out[1] = 1'b1;
-			
+		else begin
+			reg_out = 0;
+		
+			case(instr_op) 
+				R:		begin
+					reg_out[8] = 1'b1;
+					reg_out[5] = 1'b1;
+					reg_out[1] = 1'b1;
+				
+					end
+				lw:	begin
+					reg_out[7] = 1'b1;
+					reg_out[6] = 1'b1;
+					reg_out[5] = 1'b1;
+					reg_out[4] = 1'b1;
+					
+					end
+					
+				sw:	begin
+					reg_out[7] = 1'b1;
+					reg_out[3] = 1'b1;
+				
+					end
+					
+				beq:	begin
+					reg_out[2] = 1'b1;
+					reg_out[0] = 1'b1;
+					end
+					
+				imm:	begin
+					reg_out[7] = 1'b1;
+					reg_out[5] = 1'b1;	
 				end
-			lw:	begin
-				reg_out[7] = 1'b1;
-				reg_out[6] = 1'b1;
-				reg_out[5] = 1'b1;
-				reg_out[4] = 1'b1;
+				
+				default: begin
 				
 				end
+					
+			endcase
+		end
 				
-			sw:	begin
-				reg_out[7] = 1'b1;
-				reg_out[3] = 1'b1;
-			
-				end
-				
-			beq:	begin
-				reg_out[2] = 1'b1;
-				reg_out[0] = 1'b1;
-				end
-				
-			imm:	begin
-				reg_out[7] = 1'b1;
-				reg_out[5] = 1'b1;	
-			end
-			
-			default: begin
-			
-			end
-				
-		endcase
-			
 	
 	
 	

@@ -46,6 +46,7 @@ assign prog_count = PC;
 assign instr_opcode = opcode;
 
 // Insert your solution below here.
+
 	 
 cs161_datapath DP (
 	.clk(clk),
@@ -69,6 +70,8 @@ cs161_datapath DP (
 );
 
 control_unit ctrl (
+	.clk(clk),
+	.rst(rst),
 	.instr_op(opcode),
 	.reg_dst(reg_dst),
 	.branch(branch),    

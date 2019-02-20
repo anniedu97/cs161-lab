@@ -44,7 +44,7 @@ module cs161_processor_testbench( );
 	 clk = 0 ; 
 	 rst = 0 ; 
 	 # 20 ; 
-		 
+	 
 	 forever begin 
 		#20 clk = ~clk;
 	 end 
