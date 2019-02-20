@@ -98,7 +98,7 @@ end
 cpumemory mem (
 	.clk(clk),
 	.rst(rst),
-	.instr_read_address(PC),
+	.instr_read_address(PC/4),
 	.instr_instruction(instr)
 );
 	
