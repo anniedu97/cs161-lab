@@ -27,7 +27,7 @@ WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v
 WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 112: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 5-bit.
 WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 127: Size mismatch in connection of port <datain2>. Formal port size is 32-bit while actual signal size is 16-bit.
 WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 145: Size mismatch in connection of port <datain1>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" Line 76: Size mismatch in connection of port <alu_op>. Formal port size is 4-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" Line 77: Size mismatch in connection of port <alu_op>. Formal port size is 4-bit while actual signal size is 2-bit.
 Completed static elaboration
 Compiling module cpumemory
 Compiling module mux_2_1
@@ -43,5 +43,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 10 Verilog Units
 Built simulation executable C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor_testbench_isim_beh.exe
-Fuse Memory Usage: 28152 KB
-Fuse CPU Usage: 578 ms
+Fuse Memory Usage: 27496 KB
+Fuse CPU Usage: 452 ms
