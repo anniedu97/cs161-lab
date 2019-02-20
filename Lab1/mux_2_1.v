@@ -14,9 +14,5 @@ output wire [WORD_SIZE-1:0] data_out ;
 
 assign data_out = (select_in) ? datain2 : datain1;
 
-always @* begin
-	$display("%d", datain1);
-	$display("%d", datain2);
-end 
 
 endmodule

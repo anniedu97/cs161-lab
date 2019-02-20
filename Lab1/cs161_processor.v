@@ -35,7 +35,7 @@ wire reg_dst;
 wire branch;    
 wire mem_read;  
 wire mem_to_reg;
-wire [1:0]  alu_op;
+wire [3:0]  alu_op;
 wire mem_write;  
 wire alu_src; 
 wire reg_write;
@@ -53,7 +53,7 @@ cs161_datapath DP (
 	.branch(branch),
 	.mem_read(mem_read),
 	.mem_to_reg(mem_to_reg),
-	.alu_op(alu_out),
+	.alu_op(alu_op),
 	.mem_write(mem_write),
 	.alu_src(alu_src),
 	.reg_write(reg_write),	

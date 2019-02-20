@@ -61,6 +61,7 @@ module my_alu #(parameter NBITS = 32)(
 		ovflo = 0;
 		zer = 0;
 		cout = 0;
+		
 		case(opcode) 
 			u_add: begin
 						res = A + B;

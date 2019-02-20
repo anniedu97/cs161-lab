@@ -70,6 +70,7 @@ wire [`WORD_SIZE-1:0] alu_result;
 wire [`WORD_SIZE-1:0] mem_data;
 wire [`WORD_SIZE-1:0] reg_data_1;
 wire [`WORD_SIZE-1:0] reg_data_2;
+wire [31:0] signEX;
 
 wire [4:0] dst_2;
 wire [4:0] dst_1;
@@ -84,6 +85,7 @@ assign write_reg_addr = dst_addr;
 assign reg1_data = reg_data_1;
 assign reg2_data = reg_data_2;
 assign funct = instr[5:0];
+assign signEX = { {16{instr[15]}}, instr[15:0]};
 
 
 
@@ -96,7 +98,7 @@ always @(posedge clk) begin
 	if(rst != 1) begin
 		PC = PC + 4;
 	end
-	$display("%b", alu_result);
+	//$display("%b", funct);
 	//$display("%b", dst_2);
 end
 
@@ -129,7 +131,7 @@ cpu_registers regs(
 mux_2_1 alu_src_mux(
 	.select_in(alu_src),
 	.datain1(reg_data_2),
-	.datain2(instr[15:0]),
+	.datain2(signEX),
 	.data_out(alu_B)
 );
 
