@@ -43,7 +43,7 @@ module alu_control(
 	 
 	 
 	 always @(posedge clk) begin
-		
+	 
 		case(alu_op)
 			mem:	begin
 				out = 4'b0010;
@@ -94,7 +94,7 @@ module alu_control(
 		
 		endcase
 	 
-	 
+	  
 	 end
 	 
 	 

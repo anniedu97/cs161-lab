@@ -73,11 +73,12 @@ wire [`WORD_SIZE-1:0] reg_data_2;
 wire [31:0] signEX;
 wire [31:0] branch_addr;
 reg [31:0] branch_a;
+wire branch_taken;
 
 wire [4:0] dst_2;
 wire [4:0] dst_1;
 
-assign prog_count = PC;
+//assign prog_count = PC;
 assign instr_opcode = instr[31:26];
 assign reg1_addr = instr[25:21];
 assign reg2_addr = instr[20:16];
@@ -86,6 +87,7 @@ assign reg2_data = reg_data_2;
 assign funct = instr[5:0];
 assign signEX = { {16{instr[15]}}, instr[15:0]};
 assign branch_addr = branch_a;
+assign branch_taken = (branch && alu_result == 0);
 
 
 
@@ -113,7 +115,7 @@ cpumemory mem (
 	.instr_read_address(PC/4),
 	.instr_instruction(instr),
 	.data_mem_write(mem_write),
-	.data_address(alu_result),
+	.data_address(alu_result/4 - 1),
 	.data_write_data(reg2_data),
 	.data_read_data(mem_data) 
 );
@@ -121,14 +123,13 @@ cpumemory mem (
 assign opcode = instr[31:26];
 assign reg_1_adress = instr[25:21];
 
-/*
+
 mux_2_1 branch_mux(
-	.select_in(branch),
+	.select_in(branch_taken),
 	.datain1(PC),
 	.datain2(branch_addr),
 	.data_out(prog_count)
 );
-*/
 
 mux_2_1 regdst_mux(
 	.select_in(reg_dst),

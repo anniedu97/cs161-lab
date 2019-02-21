@@ -57,7 +57,7 @@ module my_alu #(parameter NBITS = 32)(
 	 localparam NOR 	= 4'b1100;
 	 localparam SLT	= 4'b0111;
 	 
-	 always @(posedge clk) begin
+	 always @ * begin
 		ovflo = 0;
 		zer = 0;
 		cout = 0;
@@ -157,10 +157,9 @@ module my_alu #(parameter NBITS = 32)(
 				zer = 0;
 			end
 		
-	 end 
 	 
 	 
-	 
+	 end
 	 
 
 
