@@ -71,6 +71,8 @@ wire [`WORD_SIZE-1:0] mem_data;
 wire [`WORD_SIZE-1:0] reg_data_1;
 wire [`WORD_SIZE-1:0] reg_data_2;
 wire [31:0] signEX;
+wire [31:0] branch_addr;
+reg [31:0] branch_a;
 
 wire [4:0] dst_2;
 wire [4:0] dst_1;
@@ -83,6 +85,7 @@ assign reg1_data = reg_data_1;
 assign reg2_data = reg_data_2;
 assign funct = instr[5:0];
 assign signEX = { {16{instr[15]}}, instr[15:0]};
+assign branch_addr = branch_a;
 
 
 
@@ -92,26 +95,40 @@ end
 
 
 always @(posedge clk) begin
-	if(rst != 1) begin
-		PC = PC + 4;
+	if(rst) begin
+		PC = 0;
 	end
-	//$display("%d", alu_result);
-	//$display("write_data", write_reg_data);
+	
+	else begin 
+		PC = prog_count + 4;
+		branch_a = PC + (signEX << 2);
+	end
+	//$display("%d branch sig ", branch);
+	//$display("%d branch addr", branch_addr);
 end
 
 cpumemory mem (
 	.clk(clk),
 	.rst(rst),
 	.instr_read_address(PC/4),
-	.instr_instruction(instr)
-	//.data_mem_write(mem_write),
-	//.data_address(alu_result),
-	//.data_write_data(reg2_data),
-	//.data_read_data(mem_data) 
+	.instr_instruction(instr),
+	.data_mem_write(mem_write),
+	.data_address(alu_result),
+	.data_write_data(reg2_data),
+	.data_read_data(mem_data) 
 );
 	
 assign opcode = instr[31:26];
 assign reg_1_adress = instr[25:21];
+
+/*
+mux_2_1 branch_mux(
+	.select_in(branch),
+	.datain1(PC),
+	.datain2(branch_addr),
+	.data_out(prog_count)
+);
+*/
 
 mux_2_1 regdst_mux(
 	.select_in(reg_dst),
@@ -140,6 +157,8 @@ mux_2_1 alu_src_mux(
 );
 
 alu_control alu_ctrl(
+	.clk(clk),
+	.rst(rst),
 	.alu_op(alu_op),  
 	.instruction_5_0(funct),
 	.alu_out(alu_fnct)
@@ -162,6 +181,8 @@ mux_2_1 mem_to_reg_mux(
 	.data_out(write_reg_data)
 );
 
+/*
+
 cpumemory datamem (
 	.clk(clk),
 	.rst(rst),
@@ -170,5 +191,6 @@ cpumemory datamem (
 	.data_write_data(reg2_data),
 	.data_read_data(mem_data) 
 	);
+*/
 
 endmodule

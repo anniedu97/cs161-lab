@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor_testbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cs161_processor_testbench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/cs161_processor_testbench/prog_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">prog_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prog_count[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/instr_opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instr_opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/reg1_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg1_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg1_addr[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/reg1_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg1_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg1_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/reg2_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg2_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg2_addr[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/reg2_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg2_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg2_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/write_reg_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_reg_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">write_reg_addr[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/write_reg_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_reg_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_reg_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/DP/signEX" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">signEX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">signEX[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/DP/alu_B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_B[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/DP/alu_src" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_src</obj_property>
+      <obj_property name="ObjectShortName">alu_src</obj_property>
+   </wvobject>
+</wave_config>

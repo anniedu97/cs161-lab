@@ -62,8 +62,8 @@ module my_alu #(parameter NBITS = 32)(
 		zer = 0;
 		cout = 0;
 		
-		$display("%d", "A: ", A);
-		$display("%d", "B: ", B);
+	//	$display("%d", "A: ", X);
+	//	$display("%d", "B: ", B);
 		
 		case(opcode) 
 			u_add: begin

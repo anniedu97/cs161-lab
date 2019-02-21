@@ -19,6 +19,8 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module alu_control(
+	 input wire clk,
+	 input wire rst,
 	 input wire [3:0] alu_op , 
     input wire [5:0] instruction_5_0 , 
     output wire [3:0] alu_out 
@@ -40,7 +42,7 @@ module alu_control(
 	 localparam SLT = 6'b101010;
 	 
 	 
-	 always @ * begin
+	 always @(posedge clk) begin
 		
 		case(alu_op)
 			mem:	begin
