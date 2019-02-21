@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="13" />
+   <WVObjectSize size="19" />
    <wvobject fp_name="/cs161_processor_testbench/prog_count" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">prog_count[31:0]</obj_property>
       <obj_property name="ObjectShortName">prog_count[31:0]</obj_property>
@@ -58,18 +58,45 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/cs161_processor_testbench/uut/DP/signEX" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">signEX[31:0]</obj_property>
-      <obj_property name="ObjectShortName">signEX[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/cs161_processor_testbench/uut/DP/mem/data_address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_address[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/DP/alu_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/cs161_processor_testbench/uut/DP/alu_B" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">alu_B[31:0]</obj_property>
       <obj_property name="ObjectShortName">alu_B[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/cs161_processor_testbench/uut/DP/alu_src" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">alu_src</obj_property>
-      <obj_property name="ObjectShortName">alu_src</obj_property>
+   <wvobject fp_name="/cs161_processor_testbench/uut/DP/alu/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/DP/alu/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/DP/alu/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/DP/alu/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/DP/alu_op" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cs161_processor_testbench/uut/DP/alu_fnct" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_fnct[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_fnct[3:0]</obj_property>
    </wvobject>
 </wave_config>

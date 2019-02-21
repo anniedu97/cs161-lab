@@ -99,11 +99,12 @@ end
 always @(posedge clk) begin
 	if(rst) begin
 		PC = 0;
+		branch_a = 0;
 	end
 	
 	else begin 
 		PC = prog_count + 4;
-		branch_a = PC + (signEX << 2);
+		branch_a = prog_count + (signEX <<< 2);
 	end
 	//$display("%d branch sig ", branch);
 	//$display("%d branch addr", branch_addr);
@@ -127,7 +128,7 @@ assign reg_1_adress = instr[25:21];
 mux_2_1 branch_mux(
 	.select_in(branch_taken),
 	.datain1(PC),
-	.datain2(branch_addr),
+	.datain2(PC + (signEX <<< 2) ),
 	.data_out(prog_count)
 );
 

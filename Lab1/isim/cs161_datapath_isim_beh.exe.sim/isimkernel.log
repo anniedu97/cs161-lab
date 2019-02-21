@@ -2,28 +2,28 @@ Command line:
    cs161_datapath_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  62216
+     -socket  63065
 
-Wed Feb 20 20:58:02 2019
+Thu Feb 21 13:09:39 2019
 
 
  Elaboration Time: 0.046875 sec
 
  Current Memory Usage: 5331.23 Meg
 
- Total Signals          : 90
- Total Nets             : 649
- Total Signal Drivers   : 31
- Total Blocks           : 9
- Total Primitive Blocks : 8
- Total Processes        : 39
- Total Traceable Variables  : 51
- Total Scalar Nets and Variables : 10290
-Total Line Count : 136
+ Total Signals          : 97
+ Total Nets             : 714
+ Total Signal Drivers   : 34
+ Total Blocks           : 10
+ Total Primitive Blocks : 9
+ Total Processes        : 42
+ Total Traceable Variables  : 52
+ Total Scalar Nets and Variables : 10387
+Total Line Count : 138
 
- Total Simulation Time: 0.0625 sec
+ Total Simulation Time: 0.109375 sec
 
  Current Memory Usage: 5331.23 Meg
 
-Wed Feb 20 20:58:13 2019
+Thu Feb 21 13:09:45 2019
 
