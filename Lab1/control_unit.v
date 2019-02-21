@@ -50,7 +50,7 @@ module control_unit(
 	localparam imm = 6'b001000;
 
 
-	always @(posedge clk) begin
+	always @ * begin
 		if(rst) begin
 			reg_out = 0;
 		end
