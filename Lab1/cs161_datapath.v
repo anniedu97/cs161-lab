@@ -88,9 +88,7 @@ assign reg1_data = reg_data_1;
 assign reg2_data = reg_data_2;
 assign funct = instr[5:0];
 assign signEX = { {16{instr[15]}}, instr[15:0]};
-assign branch_addr = branch_a;
 assign branch_taken = (branch && alu_result == 0);
-
 
 
 initial begin
@@ -101,15 +99,14 @@ end
 always @(posedge clk) begin
 	if(rst) begin
 		PC = 0;
-		branch_a = 0;
 	end
 	
 	else begin 
 		PC = newPC + 4;
-		branch_a = prog_count + (signEX <<< 2);
 	end
-	//$display("%d branch sig ", branch);
-	//$display("%d branch addr", branch_addr);
+	
+	
+	
 end
 
 cpumemory mem (
@@ -177,7 +174,6 @@ my_alu alu(
 	.result(alu_result)
 );
 
-
 mux_2_1 mem_to_reg_mux(
 	.select_in(mem_to_reg),
 	.datain1(alu_result),
@@ -185,16 +181,13 @@ mux_2_1 mem_to_reg_mux(
 	.data_out(write_reg_data)
 );
 
-/*
+gen_register IF(
+	
 
-cpumemory datamem (
-	.clk(clk),
-	.rst(rst),
-	.data_mem_write(mem_write),
-	.data_address(alu_result),
-	.data_write_data(reg2_data),
-	.data_read_data(mem_data) 
-	);
-*/
+
+
+);
+
+
 
 endmodule
