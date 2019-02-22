@@ -61,6 +61,8 @@ module cs161_datapath(
 // Insert your solution below here.
 
 reg [`WORD_SIZE-1:0] PC;
+wire [`WORD_SIZE-1:0] newPC;
+
 wire [`WORD_SIZE-1:0] instr;
 wire [5:0] opcode;
 wire [3:0] alu_fnct;
@@ -78,7 +80,7 @@ wire branch_taken;
 wire [4:0] dst_2;
 wire [4:0] dst_1;
 
-//assign prog_count = PC;
+assign prog_count = PC;
 assign instr_opcode = instr[31:26];
 assign reg1_addr = instr[25:21];
 assign reg2_addr = instr[20:16];
@@ -103,7 +105,7 @@ always @(posedge clk) begin
 	end
 	
 	else begin 
-		PC = prog_count + 4;
+		PC = newPC + 4;
 		branch_a = prog_count + (signEX <<< 2);
 	end
 	//$display("%d branch sig ", branch);
@@ -129,7 +131,7 @@ mux_2_1 branch_mux(
 	.select_in(branch_taken),
 	.datain1(PC),
 	.datain2(PC + (signEX <<< 2) ),
-	.data_out(prog_count)
+	.data_out(newPC)
 );
 
 mux_2_1 regdst_mux(

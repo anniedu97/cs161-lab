@@ -42,7 +42,7 @@ module alu_control(
 	 localparam SLT = 6'b101010;
 	 
 	 
-	 always @(posedge clk) begin
+	 always @ * begin
 	 
 		case(alu_op)
 			mem:	begin
