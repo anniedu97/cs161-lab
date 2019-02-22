@@ -90,6 +90,11 @@ assign funct = instr[5:0];
 assign signEX = { {16{instr[15]}}, instr[15:0]};
 assign branch_taken = (branch && alu_result == 0);
 
+//Pipeline Regs
+reg [`WORD_SIZE-1:0] Instruction;
+reg [`WORD_SIZE-1:0] Reg1_Data;
+reg [`WORD_SIZE-1:0]	Reg2_Data;
+reg [`WORD_SIZE-1:0] ALU_Result;
 
 initial begin
 	PC = 0;
@@ -104,8 +109,6 @@ always @(posedge clk) begin
 	else begin 
 		PC = newPC + 4;
 	end
-	
-	
 	
 end
 
@@ -169,7 +172,7 @@ my_alu alu(
 	.clk(clk),
 	.reset(rst),
 	.opcode(alu_fnct),
-	.A(reg_data_1),
+	.A(Reg1_Data),
 	.B(alu_B),
 	.result(alu_result)
 );
@@ -181,13 +184,44 @@ mux_2_1 mem_to_reg_mux(
 	.data_out(write_reg_data)
 );
 
-gen_register IF(
-	
-
-
-
+gen_register PC(
+	.clk(clk),
+	.rst(rst),
+	.write_enable(1),
+	.data_in(),
+	.data_out()
 );
 
+gen_register Instr(
+	.clk(clk),
+	.rst(rst),
+	.write_enable(1),
+	.data_in(instr),
+	.data_out(Instruction)
+);
 
+gen_register Reg1(
+	.clk(clk),
+	.rst(rst),
+	.write_enable(1),
+	.data_in(reg1_data),
+	.data_out(Reg1_Data)	
+);
+
+gen_register Reg2(
+	.clk(clk),
+	.rst(rst),
+	.write_enable(1),
+	.data_in(reg2_data),
+	.data_out(Reg2_Data)	
+);
+
+gen_register ALU_Res(
+	.clk(clk),
+	.rst(rst),
+	.write_enable(1),
+	.data_in(alu_result),
+	.data_out(ALU_Result)	
+);
 
 endmodule

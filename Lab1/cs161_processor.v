@@ -46,7 +46,6 @@ assign prog_count = PC;
 assign instr_opcode = opcode;
 
 // Insert your solution below here.
-
 	 
 cs161_datapath DP (
 	.clk(clk),

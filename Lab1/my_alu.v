@@ -140,6 +140,9 @@ module my_alu #(parameter NBITS = 32)(
 					if(A < B) begin
 						res = 0;
 					end
+					else begin
+						res = 1;
+					end
 				end
 					
 			default: begin
