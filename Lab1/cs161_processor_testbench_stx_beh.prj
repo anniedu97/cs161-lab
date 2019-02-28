@@ -1,5 +1,6 @@
 verilog isim_temp "my_alu.v"
 verilog isim_temp "mux_2_1.v"
+verilog isim_temp "gen_register.v"
 verilog isim_temp "cpu_registers.v"
 verilog isim_temp "cpumemory.v"
 verilog isim_temp "alu_control.v"

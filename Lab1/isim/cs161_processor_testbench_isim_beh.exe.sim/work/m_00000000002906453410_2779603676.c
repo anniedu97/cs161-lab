@@ -525,20 +525,20 @@ LAB24:    t2 = ((char*)((ng11)));
 
 LAB26:
 LAB28:
-LAB27:    xsi_set_current_line(145, ng0);
+LAB27:    xsi_set_current_line(148, ng0);
 
-LAB251:    xsi_set_current_line(146, ng0);
+LAB252:    xsi_set_current_line(149, ng0);
     t2 = ((char*)((ng3)));
     memset(t8, 0, 8);
     xsi_vlog_signed_unary_minus(t8, 32, t2, 32);
     t4 = (t0 + 4544);
     xsi_vlogvar_assign_value(t4, t8, 0, 0, 32);
-    xsi_set_current_line(147, ng0);
+    xsi_set_current_line(150, ng0);
     t2 = ((char*)((ng1)));
     t4 = (t0 + 4864);
     xsi_vlogvar_assign_value(t4, t2, 0, 0, 1);
 
-LAB29:    xsi_set_current_line(152, ng0);
+LAB29:    xsi_set_current_line(155, ng0);
     t2 = (t0 + 3344U);
     t4 = *((char **)t2);
     t2 = ((char*)((ng1)));
@@ -551,16 +551,16 @@ LAB29:    xsi_set_current_line(152, ng0);
     t17 = (t16 & t15);
     t18 = (t17 != 0);
     if (t18 > 0)
-        goto LAB252;
+        goto LAB253;
 
-LAB253:    xsi_set_current_line(156, ng0);
+LAB254:    xsi_set_current_line(159, ng0);
 
-LAB256:    xsi_set_current_line(157, ng0);
+LAB257:    xsi_set_current_line(160, ng0);
     t2 = ((char*)((ng1)));
     t4 = (t0 + 4704);
     xsi_vlogvar_assign_value(t4, t2, 0, 0, 1);
 
-LAB254:    goto LAB2;
+LAB255:    goto LAB2;
 
 LAB7:    xsi_set_current_line(69, ng0);
 
@@ -1144,7 +1144,13 @@ LAB245:    t11 = (t8 + 4);
     if (t18 > 0)
         goto LAB247;
 
-LAB248:
+LAB248:    xsi_set_current_line(143, ng0);
+
+LAB251:    xsi_set_current_line(144, ng0);
+    t2 = ((char*)((ng3)));
+    t4 = (t0 + 4544);
+    xsi_vlogvar_assign_value(t4, t2, 0, 0, 32);
+
 LAB249:    goto LAB29;
 
 LAB32:    t11 = (t8 + 4);
@@ -2153,13 +2159,13 @@ LAB250:    xsi_set_current_line(141, ng0);
     xsi_vlogvar_assign_value(t19, t13, 0, 0, 32);
     goto LAB249;
 
-LAB252:    xsi_set_current_line(152, ng0);
+LAB253:    xsi_set_current_line(155, ng0);
 
-LAB255:    xsi_set_current_line(153, ng0);
+LAB256:    xsi_set_current_line(156, ng0);
     t7 = ((char*)((ng3)));
     t9 = (t0 + 4704);
     xsi_vlogvar_assign_value(t9, t7, 0, 0, 1);
-    goto LAB254;
+    goto LAB255;
 
 }
 
