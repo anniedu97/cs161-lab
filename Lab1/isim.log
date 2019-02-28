@@ -7,9 +7,26 @@ WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for 
 This is a Lite version of ISim.
 WARNING:  For instance DP/mem/, width 8 of formal port instr_read_address is not equal to width 32 of actual constant.
 WARNING:  For instance DP/mem/, width 8 of formal port data_address is not equal to width 32 of actual constant.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain1 is not equal to width 5 of actual.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain2 is not equal to width 5 of actual.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 101.  For instance DP/regdst_mux/, width 32 of formal port datain1 is not equal to width 5 of actual variable Dst1_Addr. 
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 102.  For instance DP/regdst_mux/, width 32 of formal port datain2 is not equal to width 5 of actual variable Dst2_Addr. 
 WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 58.  For instance DP/regdst_mux/, width 32 of formal port data_out is not equal to width 5 of actual signal write_reg_addr.
+WARNING:  For instance DP/PC_reg/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/Instr/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/Reg1/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/Reg2/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/sign_extend/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 234.  For instance DP/sign_extend/, width 32 of formal port data_in is not equal to width 1 of actual signal signEx.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 235.  For instance DP/sign_extend/, width 32 of formal port data_out is not equal to width 1 of actual signal SignEx.
+WARNING:  For instance DP/Dst_Addr_1/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 92.  For instance DP/Dst_Addr_1/, width 32 of formal port data_in is not equal to width 1 of actual signal dst1.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 101.  For instance DP/Dst_Addr_1/, width 32 of formal port data_out is not equal to width 5 of actual variable Dst1_Addr. 
+WARNING:  For instance DP/Dst_Addr_2/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 93.  For instance DP/Dst_Addr_2/, width 32 of formal port data_in is not equal to width 1 of actual signal dst2.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 102.  For instance DP/Dst_Addr_2/, width 32 of formal port data_out is not equal to width 5 of actual variable Dst2_Addr. 
+WARNING:  For instance DP/Write_Reg/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 58.  For instance DP/Write_Reg/, width 32 of formal port data_in is not equal to width 5 of actual signal write_reg_addr.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 103.  For instance DP/Write_Reg/, width 32 of formal port data_out is not equal to width 5 of actual variable Write_Reg_Addr. 
+WARNING:  For instance DP/ALU_Res/, width 1 of formal port write_en is not equal to width 32 of actual constant.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -23,9 +40,26 @@ WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for 
 This is a Lite version of ISim.
 WARNING:  For instance DP/mem/, width 8 of formal port instr_read_address is not equal to width 32 of actual constant.
 WARNING:  For instance DP/mem/, width 8 of formal port data_address is not equal to width 32 of actual constant.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain1 is not equal to width 5 of actual.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain2 is not equal to width 5 of actual.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 101.  For instance DP/regdst_mux/, width 32 of formal port datain1 is not equal to width 5 of actual variable Dst1_Addr. 
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 102.  For instance DP/regdst_mux/, width 32 of formal port datain2 is not equal to width 5 of actual variable Dst2_Addr. 
 WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 58.  For instance DP/regdst_mux/, width 32 of formal port data_out is not equal to width 5 of actual signal write_reg_addr.
+WARNING:  For instance DP/PC_reg/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/Instr/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/Reg1/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/Reg2/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/sign_extend/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 234.  For instance DP/sign_extend/, width 32 of formal port data_in is not equal to width 1 of actual signal signEx.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 235.  For instance DP/sign_extend/, width 32 of formal port data_out is not equal to width 1 of actual signal SignEx.
+WARNING:  For instance DP/Dst_Addr_1/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 92.  For instance DP/Dst_Addr_1/, width 32 of formal port data_in is not equal to width 1 of actual signal dst1.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 101.  For instance DP/Dst_Addr_1/, width 32 of formal port data_out is not equal to width 5 of actual variable Dst1_Addr. 
+WARNING:  For instance DP/Dst_Addr_2/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 93.  For instance DP/Dst_Addr_2/, width 32 of formal port data_in is not equal to width 1 of actual signal dst2.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 102.  For instance DP/Dst_Addr_2/, width 32 of formal port data_out is not equal to width 5 of actual variable Dst2_Addr. 
+WARNING:  For instance DP/Write_Reg/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 58.  For instance DP/Write_Reg/, width 32 of formal port data_in is not equal to width 5 of actual signal write_reg_addr.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 103.  For instance DP/Write_Reg/, width 32 of formal port data_out is not equal to width 5 of actual variable Write_Reg_Addr. 
+WARNING:  For instance DP/ALU_Res/, width 1 of formal port write_en is not equal to width 32 of actual constant.
 # run 5us
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
@@ -36,61 +70,26 @@ WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for 
 This is a Lite version of ISim.
 WARNING:  For instance DP/mem/, width 8 of formal port instr_read_address is not equal to width 32 of actual constant.
 WARNING:  For instance DP/mem/, width 8 of formal port data_address is not equal to width 32 of actual constant.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain1 is not equal to width 5 of actual.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain2 is not equal to width 5 of actual.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 101.  For instance DP/regdst_mux/, width 32 of formal port datain1 is not equal to width 5 of actual variable Dst1_Addr. 
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 102.  For instance DP/regdst_mux/, width 32 of formal port datain2 is not equal to width 5 of actual variable Dst2_Addr. 
 WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 58.  For instance DP/regdst_mux/, width 32 of formal port data_out is not equal to width 5 of actual signal write_reg_addr.
-# run 5us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x7708f090)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-WARNING:  For instance DP/mem/, width 8 of formal port instr_read_address is not equal to width 32 of actual constant.
-WARNING:  For instance DP/mem/, width 8 of formal port data_address is not equal to width 32 of actual constant.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain1 is not equal to width 5 of actual.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain2 is not equal to width 5 of actual.
-WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 58.  For instance DP/regdst_mux/, width 32 of formal port data_out is not equal to width 5 of actual signal write_reg_addr.
-# run 5us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x7708f090)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-WARNING:  For instance DP/mem/, width 8 of formal port instr_read_address is not equal to width 32 of actual constant.
-WARNING:  For instance DP/mem/, width 8 of formal port data_address is not equal to width 32 of actual constant.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain1 is not equal to width 5 of actual.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain2 is not equal to width 5 of actual.
-WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 58.  For instance DP/regdst_mux/, width 32 of formal port data_out is not equal to width 5 of actual signal write_reg_addr.
-# run 5us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x7708f090)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-WARNING:  For instance DP/mem/, width 8 of formal port instr_read_address is not equal to width 32 of actual constant.
-WARNING:  For instance DP/mem/, width 8 of formal port data_address is not equal to width 32 of actual constant.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain1 is not equal to width 5 of actual.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain2 is not equal to width 5 of actual.
-WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 58.  For instance DP/regdst_mux/, width 32 of formal port data_out is not equal to width 5 of actual signal write_reg_addr.
-# run 5us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x7708f090)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-WARNING:  For instance DP/mem/, width 8 of formal port instr_read_address is not equal to width 32 of actual constant.
-WARNING:  For instance DP/mem/, width 8 of formal port data_address is not equal to width 32 of actual constant.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain1 is not equal to width 5 of actual.
-WARNING: For instance DP/regdst_mux/, width 32 of formal port datain2 is not equal to width 5 of actual.
-WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 58.  For instance DP/regdst_mux/, width 32 of formal port data_out is not equal to width 5 of actual signal write_reg_addr.
+WARNING:  For instance DP/PC_reg/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/Instr/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/Reg1/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/Reg2/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING:  For instance DP/sign_extend/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 234.  For instance DP/sign_extend/, width 32 of formal port data_in is not equal to width 1 of actual signal signEx.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 235.  For instance DP/sign_extend/, width 32 of formal port data_out is not equal to width 1 of actual signal SignEx.
+WARNING:  For instance DP/Dst_Addr_1/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 92.  For instance DP/Dst_Addr_1/, width 32 of formal port data_in is not equal to width 1 of actual signal dst1.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 101.  For instance DP/Dst_Addr_1/, width 32 of formal port data_out is not equal to width 5 of actual variable Dst1_Addr. 
+WARNING:  For instance DP/Dst_Addr_2/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 93.  For instance DP/Dst_Addr_2/, width 32 of formal port data_in is not equal to width 1 of actual signal dst2.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 102.  For instance DP/Dst_Addr_2/, width 32 of formal port data_out is not equal to width 5 of actual variable Dst2_Addr. 
+WARNING:  For instance DP/Write_Reg/, width 1 of formal port write_en is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 58.  For instance DP/Write_Reg/, width 32 of formal port data_in is not equal to width 5 of actual signal write_reg_addr.
+WARNING: File "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 103.  For instance DP/Write_Reg/, width 32 of formal port data_out is not equal to width 5 of actual variable Write_Reg_Addr. 
+WARNING:  For instance DP/ALU_Res/, width 1 of formal port write_en is not equal to width 32 of actual constant.
 # run 5us
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.

@@ -76,25 +76,32 @@ wire [31:0] signEX;
 wire [31:0] branch_addr;
 reg [31:0] branch_a;
 wire branch_taken;
-
 wire [4:0] dst_2;
 wire [4:0] dst_1;
 
 assign prog_count = PC;
 assign instr_opcode = instr[31:26];
-assign reg1_addr = instr[25:21];
-assign reg2_addr = instr[20:16];
+assign reg1_addr = Instruction[25:21];
+assign reg2_addr = Instruction[20:16];
 assign reg1_data = reg_data_1;
 assign reg2_data = reg_data_2;
 assign funct = instr[5:0];
 assign signEX = { {16{instr[15]}}, instr[15:0]};
 assign branch_taken = (branch && alu_result == 0);
 
+assign dst1 = Instruction[20:16];
+assign dst2 = Instruction[15:11];
+
 //Pipeline Regs
 reg [`WORD_SIZE-1:0] Instruction;
 reg [`WORD_SIZE-1:0] Reg1_Data;
 reg [`WORD_SIZE-1:0]	Reg2_Data;
 reg [`WORD_SIZE-1:0] ALU_Result;
+reg [`WORD_SIZE-1:0] Sign_Ex;
+reg [4:0] Dst1_Addr;
+reg [4:0] Dst2_Addr;
+reg [4:0] Write_Reg_Addr;
+
 
 initial begin
 	PC = 0;
@@ -136,8 +143,8 @@ mux_2_1 branch_mux(
 
 mux_2_1 regdst_mux(
 	.select_in(reg_dst),
-	.datain1(instr[20:16]),
-	.datain2(instr[15:11]),
+	.datain1(Dst1_Addr),
+	.datain2(Dst2_Addr),
 	.data_out(write_reg_addr)
 );
 
@@ -184,10 +191,12 @@ mux_2_1 mem_to_reg_mux(
 	.data_out(write_reg_data)
 );
 
-gen_register PC(
+//IF/ID
+
+gen_register PC_reg(
 	.clk(clk),
 	.rst(rst),
-	.write_enable(1),
+	.write_en(1),
 	.data_in(),
 	.data_out()
 );
@@ -195,15 +204,17 @@ gen_register PC(
 gen_register Instr(
 	.clk(clk),
 	.rst(rst),
-	.write_enable(1),
+	.write_en(1),
 	.data_in(instr),
 	.data_out(Instruction)
 );
 
+//IDEX
+
 gen_register Reg1(
 	.clk(clk),
 	.rst(rst),
-	.write_enable(1),
+	.write_en(1),
 	.data_in(reg1_data),
 	.data_out(Reg1_Data)	
 );
@@ -211,15 +222,48 @@ gen_register Reg1(
 gen_register Reg2(
 	.clk(clk),
 	.rst(rst),
-	.write_enable(1),
+	.write_en(1),
 	.data_in(reg2_data),
 	.data_out(Reg2_Data)	
 );
 
+gen_register sign_extend(
+	.clk(clk),
+	.rst(rst),
+	.write_en(1),
+	.data_in(signEx),
+	.data_out(SignEx)		
+);
+
+gen_register Dst_Addr_1(
+	.clk(clk),
+	.rst(rst),
+	.write_en(1),
+	.data_in(dst1),
+	.data_out(Dst1_Addr)		
+);
+
+gen_register Dst_Addr_2(
+	.clk(clk),
+	.rst(rst),
+	.write_en(1),
+	.data_in(dst2),
+	.data_out(Dst2_Addr)		
+);
+
+gen_register Write_Reg(
+	.clk(clk),
+	.rst(rst),
+	.write_en(1),
+	.data_in(write_reg_addr),
+	.data_out(Write_Reg_Addr)		
+);
+
+
 gen_register ALU_Res(
 	.clk(clk),
 	.rst(rst),
-	.write_enable(1),
+	.write_en(1),
 	.data_in(alu_result),
 	.data_out(ALU_Result)	
 );
