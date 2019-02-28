@@ -5,6 +5,7 @@ Turning on mult-threading, number of parallel sub-compilation jobs: 16
 Determining compilation order of HDL files
 Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/my_alu.v" into library work
 Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/mux_2_1.v" into library work
+Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/gen_register.v" into library work
 Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/cpu_registers.v" into library work
 Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/cpumemory.v" into library work
 Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/alu_control.v" into library work
@@ -14,26 +15,99 @@ Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" 
 Analyzing Verilog file "C:/Users/Anaya/Documents/CS161L/Lab1/cd161_processor_tb.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:1016 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" Line 51: Port instr_op is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 171: Port carryout is not connected to this instance
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 118: Size mismatch in connection of port <instr_read_address>. Formal port size is 8-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 121: Size mismatch in connection of port <data_address>. Formal port size is 8-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 139: Size mismatch in connection of port <datain1>. Formal port size is 32-bit while actual signal size is 5-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 140: Size mismatch in connection of port <datain2>. Formal port size is 32-bit while actual signal size is 5-bit.
-WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 141: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:1016 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" Line 50: Port instr_op is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 199: Port carryout is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 146: Size mismatch in connection of port <instr_read_address>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 149: Size mismatch in connection of port <data_address>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 167: Size mismatch in connection of port <datain1>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 168: Size mismatch in connection of port <datain2>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 169: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 220: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 228: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 237: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 245: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 253: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 254: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 255: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 261: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 262: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 263: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 269: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 270: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 271: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 277: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 278: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 279: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 285: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 286: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 287: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 293: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 294: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 295: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 301: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 302: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 303: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 309: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 310: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 311: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 317: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 318: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 319: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 325: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 326: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 327: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 333: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 334: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 335: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 342: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 343: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 344: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 351: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 359: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 360: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 361: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 367: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 368: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 369: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 375: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 376: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 377: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 384: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 385: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 386: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 392: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 393: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 394: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 400: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 401: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 402: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 410: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 411: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 418: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 426: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 427: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 428: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 435: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 436: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 437: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 443: Size mismatch in connection of port <write_en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 444: Size mismatch in connection of port <data_in>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 445: Size mismatch in connection of port <data_out>. Formal port size is 32-bit while actual signal size is 5-bit.
 Completed static elaboration
 Compiling module cpumemory
 Compiling module mux_2_1
 Compiling module cpu_registers
 Compiling module alu_control
 Compiling module my_alu
+Compiling module gen_register
 Compiling module cs161_datapath
 Compiling module control_unit
 Compiling module cs161_processor
 Compiling module cs161_processor_testbench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Compiled 10 Verilog Units
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 Verilog Units
 Built simulation executable C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor_testbench_isim_beh.exe
-Fuse Memory Usage: 28172 KB
-Fuse CPU Usage: 515 ms
+Fuse Memory Usage: 28284 KB
+Fuse CPU Usage: 562 ms
