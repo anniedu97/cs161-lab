@@ -58,6 +58,12 @@ module my_alu #(parameter NBITS = 32)(
 	 localparam SLT	= 4'b0111;
 	 
 	 always @ * begin
+		if(reset) begin
+			res = 0;
+		
+		end
+		
+		else begin
 		ovflo = 0;
 		zer = 0;
 		cout = 0;
@@ -160,7 +166,7 @@ module my_alu #(parameter NBITS = 32)(
 				zer = 0;
 			end
 		
-	 
+	 end
 	 
 	 end
 	 

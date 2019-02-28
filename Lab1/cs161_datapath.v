@@ -66,7 +66,6 @@ wire [`WORD_SIZE-1:0] newPC;
 wire [`WORD_SIZE-1:0] instr;
 wire [5:0] opcode;
 wire [3:0] alu_fnct;
-wire [4:0] dst_addr;
 wire [`WORD_SIZE-1:0] alu_B;
 wire [`WORD_SIZE-1:0] alu_result;
 wire [`WORD_SIZE-1:0] mem_data;
@@ -74,11 +73,12 @@ wire [31:0] signEX;
 wire [31:0] branch_addr;
 reg [31:0] branch_a;
 wire branch_taken;
-wire [4:0] dst_2;
-wire [4:0] dst_1;
+wire [31:0] dst_1;
+wire [31:0] dst_2;
 
 assign prog_count = PC;
 assign instr_opcode = Instruction[31:26];
+assign instr_op = Instruction[31:26];
 assign reg1_addr = Instruction[25:21];
 assign reg2_addr = Instruction[20:16];
 assign funct = Instruction[5:0];
@@ -93,8 +93,7 @@ wire [`WORD_SIZE-1:0] Instruction;
 wire [`WORD_SIZE-1:0] Reg1_Data;
 wire [`WORD_SIZE-1:0] Reg2_Data;
 wire [`WORD_SIZE-1:0] ALU_Result;
-wire [`WORD_SIZE-1:0] ALU_Result2;
-wire [`WORD_SIZE-1:0] Sign_Ex;
+wire [`WORD_SIZE-1:0] SignEx;
 wire [4:0] Dst1_Addr;
 wire [4:0] Dst2_Addr;
 wire [4:0] Write_Reg_Addr;
@@ -141,7 +140,7 @@ cpumemory mem (
 	.instr_read_address(PC/4),
 	.instr_instruction(instr),
 	.data_mem_write(Mem_Write_sig3),
-	.data_address(Alu_Result2/4 - 1),
+	.data_address(ALU_Result/4 - 1),
 	.data_write_data(Reg2_Data),
 	.data_read_data(mem_data) 
 );
@@ -179,7 +178,7 @@ cpu_registers regs(
 mux_2_1 alu_src_mux(
 	.select_in(ALU_Src_sig),
 	.datain1(Reg2_Data),
-	.datain2(Sign_Ex),
+	.datain2(SignEx),
 	.data_out(alu_B)
 );
 
@@ -202,7 +201,7 @@ my_alu alu(
 
 mux_2_1 mem_to_reg_mux(
 	.select_in(mem_to_reg),
-	.datain1(ALU_Result2),
+	.datain1(ALU_Result),
 	.datain2(Mem_Data),
 	.data_out(write_reg_data)
 );
@@ -253,7 +252,7 @@ gen_register sign_extend(
 	.clk(clk),
 	.rst(rst),
 	.write_en(1),
-	.data_in(signEx),
+	.data_in(signEX),
 	.data_out(SignEx)		
 );
 
@@ -261,18 +260,20 @@ gen_register Dst_Addr_1(
 	.clk(clk),
 	.rst(rst),
 	.write_en(1),
-	.data_in(dst_1),
+	.data_in(Instruction[20:16]),
 	.data_out(Dst1_Addr)		
 );
+
 
 gen_register Dst_Addr_2(	
 	.clk(clk),
 	.rst(rst),
 	.write_en(1),
-	.data_in(dst_2),
+	.data_in(Instruction[15:11]),
 	.data_out(Dst2_Addr)		
 );
 
+/*
 gen_register Write_Reg(
 	.clk(clk),
 	.rst(rst),
@@ -280,6 +281,8 @@ gen_register Write_Reg(
 	.data_in(write_reg_addr),
 	.data_out(Write_Reg_Addr)		
 );
+
+*/
 
 gen_register Reg_Dst (
 	.clk(clk),
@@ -404,12 +407,12 @@ gen_register Reg_Write2 (
 	.data_out(Reg_Write_sig2)		
 );  
 
-gen_register Write_Reg2(
+gen_register Write_Reg(
 	.clk(clk),
 	.rst(rst),
 	.write_en(1),
-	.data_in(Write_Reg_Addr),
-	.data_out(Write_Reg_Addr2)		
+	.data_in(write_reg_addr),
+	.data_out(Write_Reg_Addr)		
 );
 
 
@@ -420,14 +423,6 @@ gen_register PC_reg4(
 	.write_en(1),
 	.data_in(PC_reg_sig3),
 	.data_out(PC_reg_sig4)
-);
-
-gen_register ALU_Res2(
-	.clk(clk),
-	.rst(rst),
-	.write_en(1),
-	.data_in(Alu_Result),
-	.data_out(ALU_Result2)	
 );
 
 gen_register MemData(
@@ -455,12 +450,12 @@ gen_register Mem_Write3 (
 	.data_out(Mem_Write_sig3)		
 );  
 
-gen_register Write_Reg3(
+gen_register Write_Reg2(
 	.clk(clk),
 	.rst(rst),
 	.write_en(1),
-	.data_in(Write_Reg_Addr2),
-	.data_out(Write_Reg_Addr3)		
+	.data_in(Write_Reg_Addr),
+	.data_out(Write_Reg_Addr2)		
 );
 
 

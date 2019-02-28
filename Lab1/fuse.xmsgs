@@ -8,64 +8,58 @@
 <msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_processor.v" Line 50: Port <arg fmt="%s" index="1">instr_op</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 194: Port <arg fmt="%s" index="1">carryout</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 193: Port <arg fmt="%s" index="1">carryout</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 141: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">instr_read_address</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 140: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">instr_read_address</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 144: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_address</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 143: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_address</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 162: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">datain1</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 161: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">datain1</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 163: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">datain2</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 162: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">datain2</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 164: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 163: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 214: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 213: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 216: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 215: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 222: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 221: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 231: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 230: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 232: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 231: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 233: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 232: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 239: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 238: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 247: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 246: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 255: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 254: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 256: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 262: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 257: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 263: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 263: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 264: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 265: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 264: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 271: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
@@ -77,196 +71,181 @@
 <msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 273: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 279: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 290: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 280: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 291: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 281: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 292: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 287: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 298: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 288: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 299: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 289: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 300: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 295: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 306: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 296: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 307: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 297: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 308: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 303: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 314: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 304: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 315: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 305: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 316: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 311: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 322: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 312: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 323: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 313: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 324: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 319: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 330: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 320: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 331: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 321: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 332: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 327: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 338: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 328: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 339: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 329: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 340: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 335: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 347: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 336: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 348: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 337: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 349: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 344: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 356: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 345: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 357: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 346: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 358: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 353: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 364: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 354: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 372: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 355: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 373: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 361: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 374: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 369: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 380: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 370: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 381: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 371: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 382: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 377: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 388: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 378: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 389: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 379: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 390: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 385: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 397: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 386: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 398: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 387: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 399: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 394: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 405: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 395: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 406: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 396: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 407: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 402: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 413: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 403: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 414: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 404: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 415: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 410: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 423: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 411: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 424: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 412: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 425: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 420: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 431: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 421: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 439: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 422: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 440: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 428: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 441: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 429: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 448: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 436: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 449: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 444: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 450: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 445: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 456: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 446: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 457: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 453: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 454: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 455: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 461: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">write_en</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 462: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 463: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Anaya/Documents/CS161L/Lab1/cs161_datapath.v" Line 458: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
 </messages>

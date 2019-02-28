@@ -22,7 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/Anaya/Documents/CS161L/Lab1/cpumemory.v";
-static const char *ng1 = "init2.coe";
+static const char *ng1 = "initlab5.coe";
 static int ng2[] = {0, 0};
 static int ng3[] = {255, 0};
 
