@@ -93,6 +93,19 @@ wire [`WORD_SIZE-1:0] PC_reg_sig;
 wire [`WORD_SIZE-1:0] PC_reg_sig2;
 wire [`WORD_SIZE-1:0] PC_reg_sig3;
 wire [`WORD_SIZE-1:0] PC_reg_sig4;
+assign instr_opcode = instr[31:26];
+assign reg1_addr = Instruction[25:21];
+assign reg2_addr = Instruction[20:16];
+assign reg1_data = reg_data_1;
+assign reg2_data = reg_data_2;
+assign funct = Instruction[5:0];
+assign signEX = { {16{instr[15]}}, Instruction[15:0]};
+assign branch_taken = (Branch_sig2 && alu_result == 0);
+
+assign dst1 = Instruction[20:16];
+assign dst2 = Instruction[15:11];
+
+//Pipeline Regs
 wire [`WORD_SIZE-1:0] Instruction;
 wire [`WORD_SIZE-1:0] Reg1_Data;
 wire [`WORD_SIZE-1:0] Reg2_Data;
@@ -122,9 +135,6 @@ wire Reg_Write_sig2;
 
 wire Mem_to_Reg_sig3;
 wire Mem_Write_sig3;
-
-
-
 
 initial begin
 	PC = 0;
@@ -210,12 +220,12 @@ my_alu alu(
 mux_2_1 mem_to_reg_mux(
 	.select_in(mem_to_reg),
 	.datain1(ALU_Result2),
+	.datain1( ALU_Result2),
 	.datain2(Mem_Data),
 	.data_out(write_reg_data)
 );
 
 //IF/ID
-
 gen_register PC_reg(
 	.clk(clk),
 	.rst(rst),
@@ -265,11 +275,53 @@ gen_register sign_extend(
 	.data_out(SignEx)		
 );
 
+gen_register PC_reg(
+	.clk(clk),
+	.rst(rst),
+	.write_en(1),
+	.data_in(),
+	.data_out()
+);
+
+gen_register Instr(
+	.clk(clk),
+	.rst(rst),
+	.write_en(1),
+	.data_in(instr),
+	.data_out(Instruction)	
+);
+
+//ID/EX
+gen_register Reg1(
+	.clk(clk),
+	.rst(rst),
+	.write_en(1),
+	.data_in(reg1_data),
+	.data_out(Reg1_Data)	
+);
+
+gen_register Reg2(
+	.clk(clk),
+	.rst(rst),
+	.write_en(1),
+	.data_in(reg2_data),
+	.data_out(Reg2_Data)	
+);
+
+gen_register sign_extend(
+	.clk(clk),
+	.rst(rst),
+	.write_en(1),
+	.data_in(signEx),
+	.data_out(SignEx)		
+);
+
 gen_register Dst_Addr_1(	
 	.clk(clk),
 	.rst(rst),
 	.write_en(1),
 	.data_in(dst_1),
+	.data_in(dst1),
 	.data_out(Dst1_Addr)		
 );
 
@@ -278,6 +330,7 @@ gen_register Dst_Addr_2(
 	.rst(rst),
 	.write_en(1),
 	.data_in(dst_2),
+	.data_in(dst2),
 	.data_out(Dst2_Addr)		
 );
 
