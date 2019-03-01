@@ -75,6 +75,7 @@ reg [31:0] branch_a;
 wire branch_taken;
 wire [31:0] dst_1;
 wire [31:0] dst_2;
+wire [4:0] write_addr;
 
 assign prog_count = PC;
 assign instr_opcode = Instruction[31:26];
@@ -106,7 +107,7 @@ wire [4:0] Dst1_Addr;
 wire [4:0] Dst2_Addr;
 wire [4:0] Write_Reg_Addr;
 wire [4:0] Write_Reg_Addr2;
-wire [4:0] Write_Reg_Addr3;
+
 wire [`WORD_SIZE-1:0] Mem_Data;
 wire Reg_Dst_sig;
 wire Branch_sig;
@@ -127,7 +128,7 @@ wire Mem_to_Reg_sig3;
 wire Mem_Write_sig3;
 wire Reg_Write_sig3;
 
-
+assign write_reg_addr = Write_Reg_Addr2;
 
 initial begin
 	PC = 0;
@@ -171,7 +172,7 @@ mux_2_1 regdst_mux(
 	.select_in(Reg_Dst_sig),
 	.datain1(Dst1_Addr),
 	.datain2(Dst2_Addr),
-	.data_out(write_reg_addr)
+	.data_out(write_addr)
 );
 
 cpu_registers regs(
@@ -283,17 +284,6 @@ gen_register Dst_Addr_2(
 	.data_in(dst_2),
 	.data_out(Dst2_Addr)		
 );
-
-/*
-gen_register Write_Reg(
-	.clk(clk),
-	.rst(rst),
-	.write_en(1),
-	.data_in(write_reg_addr),
-	.data_out(Write_Reg_Addr)		
-);
-
-*/
 
 gen_register Reg_Dst (
 	.clk(clk),
@@ -422,7 +412,7 @@ gen_register Write_Reg(
 	.clk(clk),
 	.rst(rst),
 	.write_en(1),
-	.data_in(write_reg_addr),
+	.data_in(write_addr),
 	.data_out(Write_Reg_Addr)		
 );
 
