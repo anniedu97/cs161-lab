@@ -42,6 +42,14 @@ module cs161_processor_testbench( );
 	 # 20 ; 
 
 	 clk = 0 ; 
+	 rst = 1 ; 
+	 # 20 ; 
+	 
+	 clk = 1 ; 
+	 rst = 1 ; 
+	 # 20 ; 
+	 
+	 clk = 0 ; 
 	 rst = 0 ; 
 	 # 20 ; 
 	 

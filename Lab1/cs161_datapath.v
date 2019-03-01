@@ -89,10 +89,16 @@ assign dst_1 = Instruction[20:16];
 assign dst_2 = Instruction[15:11];
 
 //Pipeline Regs
+
+wire [`WORD_SIZE-1:0] PC_reg_sig;
+wire [`WORD_SIZE-1:0] PC_reg_sig2;
+wire [`WORD_SIZE-1:0] PC_reg_sig3;
+wire [`WORD_SIZE-1:0] PC_reg_sig4;
 wire [`WORD_SIZE-1:0] Instruction;
 wire [`WORD_SIZE-1:0] Reg1_Data;
 wire [`WORD_SIZE-1:0] Reg2_Data;
 wire [`WORD_SIZE-1:0] ALU_Result;
+wire [`WORD_SIZE-1:0] ALU_Result2;
 wire [`WORD_SIZE-1:0] SignEx;
 wire [4:0] Dst1_Addr;
 wire [4:0] Dst2_Addr;
@@ -117,6 +123,7 @@ wire Reg_Write_sig2;
 
 wire Mem_to_Reg_sig3;
 wire Mem_Write_sig3;
+wire Reg_Write_sig3;
 
 initial begin
 	PC = 0;
@@ -140,7 +147,7 @@ cpumemory mem (
 	.instr_read_address(PC/4),
 	.instr_instruction(instr),
 	.data_mem_write(Mem_Write_sig3),
-	.data_address(ALU_Result/4 - 1),
+	.data_address(ALU_Result),
 	.data_write_data(Reg2_Data),
 	.data_read_data(mem_data) 
 );
@@ -152,7 +159,7 @@ assign reg_1_adress = instr[25:21];
 mux_2_1 branch_mux(
 	.select_in(branch_taken),
 	.datain1(PC),
-	.datain2(PC + (signEX <<< 2) ),
+	.datain2(PC_reg_sig3),
 	.data_out(newPC)
 );
 
@@ -166,7 +173,7 @@ mux_2_1 regdst_mux(
 cpu_registers regs(
 	.clk(clk),
 	.rst(rst),
-	.reg_write(Reg_Write_sig2),
+	.reg_write(Reg_Write_sig3),
 	.read_register_1(reg1_addr),
 	.read_register_2(reg2_addr),
 	.read_data_1(reg1_data),
@@ -200,8 +207,8 @@ my_alu alu(
 );
 
 mux_2_1 mem_to_reg_mux(
-	.select_in(mem_to_reg),
-	.datain1(ALU_Result),
+	.select_in(Mem_to_Reg_sig3),
+	.datain1(ALU_Result2),
 	.datain2(Mem_Data),
 	.data_out(write_reg_data)
 );
@@ -354,7 +361,7 @@ gen_register PC_reg3(
 	.clk(clk),
 	.rst(rst),
 	.write_en(1),
-	.data_in(PC_reg_sig2),
+	.data_in(PC_reg_sig2 + (SignEX <<< 2) ),
 	.data_out(PC_reg_sig3)
 );
 
@@ -425,6 +432,14 @@ gen_register PC_reg4(
 	.data_out(PC_reg_sig4)
 );
 
+gen_register ALU_Res2(
+	.clk(clk),
+	.rst(rst),
+	.write_en(1),
+	.data_in(ALU_Result),
+	.data_out(ALU_Result2)	
+);
+
 gen_register MemData(
 	.clk(clk),
 	.rst(rst),
@@ -458,6 +473,13 @@ gen_register Write_Reg2(
 	.data_out(Write_Reg_Addr2)		
 );
 
+gen_register Reg_Write3 (
+	.clk(clk),
+	.rst(rst),
+	.write_en(1),
+	.data_in(Reg_Write_sig2),
+	.data_out(Reg_Write_sig3)		
+);  
 
 
 
