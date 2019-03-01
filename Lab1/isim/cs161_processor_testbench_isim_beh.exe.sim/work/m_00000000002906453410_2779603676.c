@@ -1170,7 +1170,7 @@ LAB250:    t16 = (t14 + 4);
 LAB253:    xsi_set_current_line(149, ng0);
 
 LAB256:    xsi_set_current_line(150, ng0);
-    t2 = ((char*)((ng3)));
+    t2 = ((char*)((ng1)));
     t4 = (t0 + 4544);
     xsi_vlogvar_assign_value(t4, t2, 0, 0, 32);
 
@@ -2177,7 +2177,7 @@ LAB249:    *((unsigned int *)t14) = 1;
 LAB252:    xsi_set_current_line(146, ng0);
 
 LAB255:    xsi_set_current_line(147, ng0);
-    t18 = ((char*)((ng1)));
+    t18 = ((char*)((ng3)));
     t19 = (t0 + 4544);
     xsi_vlogvar_assign_value(t19, t18, 0, 0, 32);
     goto LAB254;

@@ -85,6 +85,8 @@ assign funct = Instruction[5:0];
 assign signEX = { {16{Instruction[15]}}, Instruction[15:0]};
 assign branch_taken = (Branch_sig2 && alu_result == 0);
 
+
+
 assign dst_1 = Instruction[20:16];
 assign dst_2 = Instruction[15:11];
 
@@ -124,6 +126,8 @@ wire Reg_Write_sig2;
 wire Mem_to_Reg_sig3;
 wire Mem_Write_sig3;
 wire Reg_Write_sig3;
+
+
 
 initial begin
 	PC = 0;
@@ -361,7 +365,7 @@ gen_register PC_reg3(
 	.clk(clk),
 	.rst(rst),
 	.write_en(1),
-	.data_in(PC_reg_sig2 + (SignEX <<< 2) ),
+	.data_in(PC_reg_sig2 + (SignEx <<< 2)),
 	.data_out(PC_reg_sig3)
 );
 

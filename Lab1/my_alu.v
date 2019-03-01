@@ -144,10 +144,10 @@ module my_alu #(parameter NBITS = 32)(
 				
 			SLT:	begin
 					if(A < B) begin
-						res = 0;
+						res = 1;
 					end
 					else begin
-						res = 1;
+						res = 0;
 					end
 				end
 					
