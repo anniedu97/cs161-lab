@@ -18,5 +18,13 @@ module CAM_Array(
    output wire [CAM_DEPTH-1:0] decoded_match_address;
 
 // Insert your solution below here. 
+	CAM_Row(
+		.clk(clk),
+		.rst(rst),
+		.we(we_decoded_row_address),
+		.search_word(search_word),
+		.dont_care_mask(dont_care_mask),
+		.row_match(decoded_match_address)
+	);
 
 endmodule

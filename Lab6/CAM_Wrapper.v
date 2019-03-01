@@ -25,4 +25,13 @@ reg [CAM_DEPTH-1 : 0] decoded_match_address_buffered ;
 
 // Insert your solution below here
 
+CAM_Array cam_array(
+	.clk(clk),
+	.rst(rst),
+	.we_decoded_row_address(we_decoded_row_address),
+	.search_word(search_word),
+	.dont_care_mask(dont_care_mask),
+	.decoded_match_address(decoded_match_address)
+);
+
 endmodule

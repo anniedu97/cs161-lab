@@ -14,5 +14,20 @@ module STCAM_Cell(
 	 reg dont_care_bit;
 	 
 // Insert your solution below here. 
+	always @(posedge clk) begin
+		
+		if(rst) begin
+			stored_bit = 0;
+		end
+		
+		if(we && !rst)begin
+			stored_bit <= cell_search_bit;	
+			dont_care_bit <= cell_dont_care_bit;
+		end
+	
+	end
+	
+	assign cell_match_bit_out = (cell_match_bit_in && (cell_search_bit == stored_bit)) || dont_care_bit ? 1: 0;
+
 
 endmodule
