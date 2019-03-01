@@ -182,7 +182,7 @@ cpu_registers regs(
 	.read_register_2(reg2_addr),
 	.read_data_1(reg1_data),
 	.read_data_2(reg2_data),
-	.write_register(Write_Reg_Addr),
+	.write_register(Write_Reg_Addr2),
 	.write_data(write_reg_data) 
 );
 
@@ -271,7 +271,7 @@ gen_register Dst_Addr_1(
 	.clk(clk),
 	.rst(rst),
 	.write_en(1),
-	.data_in(Instruction[20:16]),
+	.data_in(dst_1),
 	.data_out(Dst1_Addr)		
 );
 
@@ -280,7 +280,7 @@ gen_register Dst_Addr_2(
 	.clk(clk),
 	.rst(rst),
 	.write_en(1),
-	.data_in(Instruction[15:11]),
+	.data_in(dst_2),
 	.data_out(Dst2_Addr)		
 );
 
