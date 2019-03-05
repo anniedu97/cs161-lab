@@ -24,9 +24,10 @@ module BCAM_Cell(
 		if(we && !rst)begin
 			stored_bit <= cell_search_bit;	
 		end
+		
+		cell_match_bit_out = (cell_match_bit_in && (cell_search_bit == stored_bit)) ? 1: 0;
 	
 	end
 	
-	assign cell_match_bit_out = (cell_match_bit_in && (cell_search_bit == stored_bit)) ? 1: 0;
 
 endmodule
