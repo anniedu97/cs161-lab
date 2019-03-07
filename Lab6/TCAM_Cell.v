@@ -24,8 +24,11 @@ module TCAM_Cell(
 			stored_bit <= cell_search_bit;	
 		end
 	
-		cell_match_bit_out = (cell_match_bit_in && (cell_search_bit == stored_bit)) || cell_dont_care_bit  ? 1: 0;
+		
+	end
 	
+	always @ * begin
+		cell_match_bit_out = (cell_match_bit_in && (cell_search_bit == stored_bit)) || cell_dont_care_bit  ? 1: 0;
 	end
 
 endmodule

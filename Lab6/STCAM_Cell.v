@@ -25,8 +25,12 @@ module STCAM_Cell(
 			dont_care_bit <= cell_dont_care_bit;
 		end
 	
-		cell_match_bit_out = (cell_match_bit_in && (cell_search_bit == stored_bit)) || dont_care_bit ? 1: 0;
 		
+		
+	end
+	
+	always @ * begin
+		cell_match_bit_out = (cell_match_bit_in && (cell_search_bit == stored_bit)) || dont_care_bit ? 1: 0;
 	end
 	
 
