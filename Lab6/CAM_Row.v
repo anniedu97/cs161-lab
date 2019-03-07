@@ -15,9 +15,11 @@ module CAM_Row(
     input wire [CAM_WIDTH-1:0] search_word, dont_care_mask;
     output wire row_match;
 	 
-	 wire [CAM_WIDTH-1:0] match;
+	 wire [CAM_WIDTH:0] match;
 	 
-	 assign row_match = match[CAM_WIDTH - 1];
+	 assign match[0] = 1'b1;
+	 
+	 assign row_match = match[CAM_WIDTH];
 
 // Insert your solution below here.
 	 
