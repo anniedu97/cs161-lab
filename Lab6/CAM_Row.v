@@ -16,6 +16,8 @@ module CAM_Row(
     output wire row_match;
 	 
 	 wire [CAM_WIDTH-1:0] match;
+	 
+	 assign row_match = match[CAM_WIDTH - 1];
 
 // Insert your solution below here.
 	 
@@ -37,5 +39,6 @@ module CAM_Row(
 		
 	 end
 	 endgenerate
+	 
 	 
 endmodule

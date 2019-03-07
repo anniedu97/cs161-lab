@@ -28,7 +28,7 @@ module CAM_Array(
 				.we(we_decoded_row_address[i]),
 				.search_word(search_word),
 				.dont_care_mask(dont_care_mask),
-				.row_match(decoded_match_address)
+				.row_match(decoded_match_address[i])
 			);
 		end
 	endgenerate
