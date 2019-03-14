@@ -44,36 +44,35 @@ module SPFPAdder #(parameter FP_SIZE = 32) (
 	reg Cout;
 	
 	integer sft_amt;
-	integer i;
 	
      // Implement your code here 
-	always @(posedge clk) begin
+	always @(posedge clk)  begin
 		//Exponents
 		expA <= A[30:23];
 		expB <= B[30:23];
 		
 		//Extend A to 33bits
-		A_33[32:24] <= A[31:23];
-		A_33[22:0] <= A[22:0];
+		A_33[32:24] = A[31:23];
+		A_33[22:0] = A[22:0];
 		
 		if(expA == 0) begin  
-			A_33[23] <= 1'b0;
+			A_33[23] = 1'b0;
 		end
 		
 		else begin
-			A_33[23] <= 1'b1;
+			A_33[23] = 1'b1;
 		end
 		
 		//Extend B to 33bits
-		B_33[32:24] <= B[31:23];
-		B_33[22:0] <= B[22:0];
+		B_33[32:24] = B[31:23];
+		B_33[22:0] = B[22:0];
 		
 		if(expB == 0) begin
-			B_33[23] <= 1'b0;
+			B_33[23] = 1'b0;
 		end
 		
 		else begin
-			B_33[23] <= 1'b1;
+			B_33[23] = 1'b1;
 		end
 		
 		if(expB > expA) begin
@@ -83,34 +82,34 @@ module SPFPAdder #(parameter FP_SIZE = 32) (
 			expB <= expA;
 		end
 		
-		expDiff <= expA - expB;
+		expDiff = expA - expB;
 		
-		B_33[23:0] <= B_33[23:0] >> expDiff;
+		B_33[23:0] = B_33[23:0] >> expDiff;
 		
 		if(A_33[32] != B_33[32]) begin
-			B_33[32] <= ~B_33[32];
-			B_33[23:0] <= ~B_33[23:0] + 1;
+			B_33[32] = ~B_33[32];
+			B_33[23:0] = ~B_33[23:0] + 1;
 		end
 		
 		
 		C_25 = A_33[23:0] + B_33[23:0];
 		
-		Cout <= C_25[24]; 
-		C <= C_25[23:0];
+		Cout = C_25[24]; 
+		C = C_25[23:0];
 		
-		if(C[23] == 1'b1) begin
-			C <= ~C + 1;
+		if((C[23] == 1'b1) && (A[31] != B[31]) && (Cout == 0)) begin
+			C = ~C + 1;
 		end
 		
 		if((A[31] == B[31]) && Cout) begin
-			C <= C >> 1;
-			C[23] <= 1'b1;
+			C = C >> 1;
+			C[23] = 1'b1;
 		end
 		
 		else begin
 			sft_amt = 0;
 			while(C[23] != 1'b1 && sft_amt < 24) begin
-				C <= C << 1;
+				C = C << 1;
 				sft_amt = sft_amt + 1;
 			end
 			

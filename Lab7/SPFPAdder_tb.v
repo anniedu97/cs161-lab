@@ -49,7 +49,7 @@ module SPFPAdder_tb;
 	initial begin
 		// Initialize Inputs
 		clk = 1;
-		rst = 1;
+		rst = 0;
 		enable = 0;
 		A = 0;
 		B = 0;
@@ -57,29 +57,27 @@ module SPFPAdder_tb;
 		// Wait 100 ns for global reset to finish
 		#100;
 		
-		clk = 0;
-		rst = 0;
-		enable = 0;
-		A = 0;
-		B = 0;
+		B = 'h40a80000; //5.25	
+		A = 'h40700000; //3.75
 		
 		#100
+		
+		A = 'hc12c0000; //-10.75 
+		B = 'h40a00000; // 5
+		
+		#100;
 		
 		A = 'h40a80000; //5.25	
 		B = 'h40700000; //3.75
 		
-		
         
 		// Add stimulus here
 		
-		forever begin
-		
-		#20 clk = ~clk;
-		
-		end
-		
 
 	end
+	
+	always 
+			#40 clk = ~clk;
       
 endmodule
 
