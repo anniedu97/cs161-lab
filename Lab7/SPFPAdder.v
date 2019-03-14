@@ -37,12 +37,17 @@ module SPFPAdder #(parameter FP_SIZE = 32) (
 	reg [7:0] expA;
 	reg [7:0] expB;
 	reg [7:0] expDiff;
+	reg [7:0] expR;
+	reg sign;
 	reg [23:0] C;
 	reg [24:0] C_25;
 	reg Cout;
 	
+	integer sft_amt;
+	integer i;
+	
      // Implement your code here 
-	always @ * begin
+	always @(posedge clk) begin
 		//Exponents
 		expA <= A[30:23];
 		expB <= B[30:23];
@@ -80,30 +85,48 @@ module SPFPAdder #(parameter FP_SIZE = 32) (
 		
 		expDiff <= expA - expB;
 		
-		B_33[23:0] = B_33[23:0] >> expDiff;
+		B_33[23:0] <= B_33[23:0] >> expDiff;
 		
 		if(A_33[32] != B_33[32]) begin
 			B_33[32] <= ~B_33[32];
 			B_33[23:0] <= ~B_33[23:0] + 1;
 		end
 		
+		
 		C_25 = A_33[23:0] + B_33[23:0];
 		
-		Cout = C_25[24]; 
-		C = C_25[23:0];
+		Cout <= C_25[24]; 
+		C <= C_25[23:0];
 		
 		if(C[23] == 1'b1) begin
-			C = ~C + 1;
+			C <= ~C + 1;
 		end
 		
-		if(A[31] == B[31] && Cout) begin
+		if((A[31] == B[31]) && Cout) begin
 			C <= C >> 1;
-			C[23] = 1'b1;
+			C[23] <= 1'b1;
 		end
 		
+		else begin
+			sft_amt = 0;
+			while(C[23] != 1'b1 && sft_amt < 24) begin
+				C <= C << 1;
+				sft_amt = sft_amt + 1;
+			end
+			
+		end
 		
+		if(sft_amt >= 24) begin
+				yourresult = 0;
+		end
 		
-		
+		else begin
+			expR = expA + sft_amt;
+			sign = A_33[32];
+			
+			yourresult = {sign, expR, C[22:0]};
+			
+		end
 		
 	
 	end
