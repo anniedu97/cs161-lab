@@ -70,6 +70,11 @@ module SPFPAdder_tb;
 		A = 'h40a80000; //5.25	
 		B = 'h40700000; //3.75
 		
+		#100
+		
+		B = 32'h42c88000; //100.25
+		A = 32'h40b80000;	//5.75
+		
         
 		// Add stimulus here
 		
@@ -77,7 +82,7 @@ module SPFPAdder_tb;
 	end
 	
 	always 
-			#40 clk = ~clk;
+			#30 clk = ~clk;
       
 endmodule
 

@@ -48,8 +48,8 @@ module SPFPAdder #(parameter FP_SIZE = 32) (
      // Implement your code here 
 	always @(posedge clk)  begin
 		//Exponents
-		expA <= A[30:23];
-		expB <= B[30:23];
+		expA = A[30:23];
+		expB = B[30:23];
 		
 		//Extend A to 33bits
 		A_33[32:24] = A[31:23];
@@ -75,14 +75,19 @@ module SPFPAdder #(parameter FP_SIZE = 32) (
 			B_33[23] = 1'b1;
 		end
 		
-		if(expB > expA) begin
+		if($signed(expB) > $signed(expA)) begin
 			A_33 <= B_33;
 			B_33 <= A_33;
 			expA <= expB;
 			expB <= expA;
 		end
 		
-		expDiff = expA - expB;
+		
+		expDiff = $signed(expA) - $signed(expB);
+		
+		if($signed(expDiff) < 0) begin
+			expDiff = ~expDiff + 1;
+		end
 		
 		B_33[23:0] = B_33[23:0] >> expDiff;
 		
